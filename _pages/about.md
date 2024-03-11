@@ -1,11 +1,11 @@
 ---
 permalink: /
-title: "About Me"
-excerpt: "About Me"
+title: "Hi, this is Ying."
+excerpt: "Hi, this is Ying."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Hi, this is Ying. 
+description
