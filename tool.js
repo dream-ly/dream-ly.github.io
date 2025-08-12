@@ -3,6 +3,7 @@ function showResearchTab(tab) {
     document.getElementById("research-selected").style.display = tab === 'selected' ? 'block' : 'none';
     document.getElementById("research-all").style.display = tab === 'all' ? 'block' : 'none';
     document.getElementById("research-hai").style.display = tab === 'hai' ? 'block' : 'none';
+    console.log("Tab visibility set for:", tab); // Debugging line
 }
 
 $('#toggle-more-news').click(function () {
