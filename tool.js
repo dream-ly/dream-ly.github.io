@@ -66,7 +66,7 @@ const researchProjectsData = [
         links: [
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
-        description: 'Blended families are those where partners have children from previous relationships in a shared household. They are increasingly common and face challenges in scheduling and maintaining connections. While digital calendars are widely used in family life, it is not clear how to design digital family calendars to support the dynamics of blended families, given mixed parenting arrangements, various ages of users, and complex relationships. We present a design-oriented study of FamilyCanvas, a digital calendar for blended families, and examine how it was incorporated into everyday family life. We conducted a nine-month autobiographical design, followed by a five-week field study with two additional blended families. Our findings reveal fragile scheduling and connection dynamics and show how FamilyCanvas was selectively appropriated as a shared awareness tool with visibility in the household and remote access, both shaped by participation and relational dynamics. We discuss design implications for blended families and point out future directions for this work.',
+        description: 'We present a design-oriented study of FamilyCanvas, a digital calendar for blended families, and examine how it was incorporated into everyday family life. We conducted a nine-month autobiographical design, followed by a five-week field study with two additional blended families.',
         tags: ['all', 'wellbeing'],
         sort: '2026-03-01'
     },
@@ -78,7 +78,7 @@ const researchProjectsData = [
         links: [
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
-        description: 'The relationship between children and extended family members (such as grandparents) is extremely important, providing meaning, knowledge, and enjoyment. However, the distributed nature of our modern society has made it difficult for young children to remain connected with extended family. We conducted a study in Canada with young children and their parents to explore the needs and preferences of young children when communicating with remote family, limiting the scope to grandparents. Through the use of video prototypes, we found a number of themes related to the types of interactions that devices should afford for young children. These include tensions between children’s independence and parental control, the need for child-lead bursts of interaction, and considerations on device lifetime and the link to remote family members. In this paper, we detail our methodology and findings to arrive at design values for this particular user group.',
+        description: 'We conducted a study in Canada with young children and their parents to explore the needs and preferences of young children when communicating with remote family, limiting the scope to grandparents. Through the use of video prototypes, we found a number of themes related to the types of interactions that devices should afford for young children.',
         tags: ['all', 'wellbeing'],
         sort: '2026-04-01'
     },
