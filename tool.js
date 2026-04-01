@@ -177,19 +177,19 @@ const researchProjectsData = [
         tags: ['all'],
         sort: '2022-08-26'
     },
-    {
-        title: 'Mind Catcher-Affective Computing based Edge-side Music Therapy System',
-        image: 'project/music/cover.jpg',
-        authors: '<u>Ying Lei</u>, Jiaqi Ruan, Yihao Zhou, Shuya Xu, Ruifang Cui',
-        venue: 'National-level Undergraduate Innovation Project',
-        links: [
-            { label: 'PDF', url: 'project/music/report.pdf' },
-            { label: 'System', url: 'project/music/application.jpg' }
-        ],
-        description: 'Identifying and regulating negative emotions is a challenging field. This project uses music therapy as a medium to influence emotions, combining music theory and computer innovation technology to create an edge-side music regulation system based on emotional computing.',
-        tags: ['all', 'wellbeing'],
-        sort: '2022-01-01'
-    }
+    // {
+    //     title: 'Mind Catcher-Affective Computing based Edge-side Music Therapy System',
+    //     image: 'project/music/cover.jpg',
+    //     authors: '<u>Ying Lei</u>, Jiaqi Ruan, Yihao Zhou, Shuya Xu, Ruifang Cui',
+    //     venue: 'National-level Undergraduate Innovation Project',
+    //     links: [
+    //         { label: 'PDF', url: 'project/music/report.pdf' },
+    //         { label: 'System', url: 'project/music/application.jpg' }
+    //     ],
+    //     description: 'Identifying and regulating negative emotions is a challenging field. This project uses music therapy as a medium to influence emotions, combining music theory and computer innovation technology to create an edge-side music regulation system based on emotional computing.',
+    //     tags: ['all', 'wellbeing'],
+    //     sort: '2022-01-01'
+    // }
 ];
 
 function getProjectsForTab(tab) {
