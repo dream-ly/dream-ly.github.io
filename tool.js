@@ -35,7 +35,9 @@ const researchProjectsData = [
         authors: '<u>Ying Lei</u>, Yancheng Cao, Will Wang, Yuanzhe Dong, Changchang Yin, Weidan Cao, Ping Zhang, Jingzhen Yang, Bingsheng Yao, Yifan Peng, Chunhua Weng, Randy Auerbach, Lena Mamykina, Dakuo Wang, Yuntao Wang, Xuhai Xu',
         venue: 'ACM Health 2026',
         links: [
-            { label: 'PDF', url: 'https://arxiv.org/pdf/2502.05783' }
+            { label: 'DOI', url: 'https://doi.org/10.1145/3788689' },
+            { label: 'PDF', url: 'https://dl.acm.org/doi/epdf/10.1145/3788689' },
+            { label: 'Website', url: 'https://sea-lab.space/Watchguardian/' }
         ],
         description: 'While just-in-time interventions (JITIs) have effectively targeted common health behaviors, individuals often have unique needs to intervene in personal undesirable actions that can negatively affect physical, mental, and social well-being. We present WatchGuardian, a smartwatch-based JITI system that empowers users to define custom interventions for these personal actions with a small number of samples.',
         tags: ['selected', 'hai', 'wellbeing'],
@@ -47,12 +49,38 @@ const researchProjectsData = [
         authors: '<u>Ying Lei</u>, Shuai Ma, Yuling Sun, Xiaojuan Ma',
         venue: 'CHI 2025',
         links: [
-            { label: 'PDF', url: 'https://doi.org/10.1145/3706598.3713933' }
+            { label: 'DOI', url: 'https://doi.org/10.1145/3706598.3713933' },
+            { label: 'PDF', url: 'https://dl.acm.org/doi/epdf/10.1145/3706598.3713933' },
+            { label: 'Media', url: 'research/AI-Afterlife//ChinaDaily.pdf' }
         ],
         award: 'Best Paper Honorable Mention Award',
         description: 'The rise of generative AI technology has sparked interest in using digital information to create AI-generated agents as digital legacies. This paper presents a qualitative study examining users\' perceptions, expectations, and concerns regarding AI-generated agents as digital legacies.',
         tags: ['selected', 'hai', 'wellbeing'],
         sort: '2025-01-16'
+    },
+    {
+        title: 'FamilyCanvas: Designing a Digital Calendar for Blended Families Through Autobiographical Design and Field Deployment',
+        image: 'research/digital-calendar/cover-1.png',
+        authors: '<u>Ying Lei</u>, Reese Muntean, Carman Neustaedter',
+        venue: 'CHI Extended Abstract 2026',
+        links: [
+            // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
+        ],
+        description: 'Blended families are those where partners have children from previous relationships in a shared household. They are increasingly common and face challenges in scheduling and maintaining connections. While digital calendars are widely used in family life, it is not clear how to design digital family calendars to support the dynamics of blended families, given mixed parenting arrangements, various ages of users, and complex relationships. We present a design-oriented study of FamilyCanvas, a digital calendar for blended families, and examine how it was incorporated into everyday family life. We conducted a nine-month autobiographical design, followed by a five-week field study with two additional blended families. Our findings reveal fragile scheduling and connection dynamics and show how FamilyCanvas was selectively appropriated as a shared awareness tool with visibility in the household and remote access, both shaped by participation and relational dynamics. We discuss design implications for blended families and point out future directions for this work.',
+        tags: ['all', 'wellbeing'],
+        sort: '2026-03-01'
+    },
+    {
+        title: 'Exploring the Needs of Preschool-aged Children, Parents, and Grandparents for Communicating Over Distance',
+        image: 'research/G2G/cover.png',
+        authors: 'Denise Y. Geiskkovitch, Carman Neustaedter, <u>Ying Lei</u>, Azadeh Forghani',
+        venue: 'DIS 2026',
+        links: [
+            // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
+        ],
+        description: 'The relationship between children and extended family members (such as grandparents) is extremely important, providing meaning, knowledge, and enjoyment. However, the distributed nature of our modern society has made it difficult for young children to remain connected with extended family. We conducted a study in Canada with young children and their parents to explore the needs and preferences of young children when communicating with remote family, limiting the scope to grandparents. Through the use of video prototypes, we found a number of themes related to the types of interactions that devices should afford for young children. These include tensions between children’s independence and parental control, the need for child-lead bursts of interaction, and considerations on device lifetime and the link to remote family members. In this paper, we detail our methodology and findings to arrive at design values for this particular user group.',
+        tags: ['all', 'wellbeing'],
+        sort: '2026-04-01'
     },
     {
         title: 'FamilyCanvas: A Family Whiteboard Calendar Designed for Blended Families',
@@ -87,9 +115,9 @@ const researchProjectsData = [
         authors: '<u>Ying Lei</u>, Shuai Ma, Yuling Sun.',
         venue: 'CHI 2024',
         links: [
-            { label: 'Video', url: 'https://www.youtube.com/watch?v=c02uMf9_7S0' },
             { label: 'DOI', url: 'https://doi.org/10.1145/3613904.3642898' },
-            { label: 'PDF', url: 'research/late-life migrants/chi24-1000.pdf' }
+            { label: 'PDF', url: 'research/late-life migrants/chi24-1000.pdf' },
+            { label: 'Video', url: 'https://www.youtube.com/watch?v=c02uMf9_7S0' }
         ],
         description: 'Migration and aging-related dilemmas have limited the opportunities for late-life migrants to rebuild social connections and access support. This paper reports a qualitative study examining the social connections and support of late-life migrants.',
         tags: ['selected', 'wellbeing'],
@@ -101,9 +129,9 @@ const researchProjectsData = [
         authors: 'Shuai Ma, Xinru Wang, <u>Ying Lei</u>, Chuhan Shi, Ming Yin, Xiaojuan Ma.',
         venue: 'CHI 2024',
         links: [
-            { label: 'Video', url: 'https://www.youtube.com/watch?v=gCRIX8CCUKs' },
             { label: 'DOI', url: 'https://doi.org/10.1145/3613904.3642671' },
-            { label: 'PDF', url: 'research/decision making-confidence/self_confidence_calibration.pdf' }
+            { label: 'PDF', url: 'research/decision making-confidence/self_confidence_calibration.pdf' },
+            { label: 'Video', url: 'https://www.youtube.com/watch?v=gCRIX8CCUKs' }
         ],
         description: 'In AI-assisted decision-making, it is crucial but challenging for humans to achieve appropriate reliance on AI. This paper approaches this problem from a human-centered perspective, human self-confidence calibration.',
         tags: ['selected', 'hai'],
@@ -115,9 +143,9 @@ const researchProjectsData = [
         authors: 'Shuai Ma, <u>Ying Lei</u>, Xinru Wang, Chengbo Zheng, Chuhan Shi, Ming Yin, Xiaojuan Ma.',
         venue: 'CHI 2023',
         links: [
-            { label: 'Video', url: 'https://www.youtube.com/watch?v=AWdUDaEqoSs' },
             { label: 'DOI', url: 'https://doi.org/10.1145/3544548.3581058' },
-            { label: 'PDF', url: 'research/decision making-trust/human_AI_CL.pdf' }
+            { label: 'PDF', url: 'research/decision making-trust/human_AI_CL.pdf' },
+            { label: 'Video', url: 'https://www.youtube.com/watch?v=AWdUDaEqoSs' }
         ],
         description: 'In AI-assisted decision-making, it is critical for human decision-makers to know when to trust AI and when to trust themselves. In this paper, we proposed to promote humans\' appropriate trust based on the correctness likelihood of both sides at a task-instance level.',
         tags: ['selected', 'hai'],
