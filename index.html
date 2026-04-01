@@ -1,465 +1,247 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Ying Lei | HCI Researcher</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.7/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <base href="https://dream-ly.github.io/">
+    <title>Ying Lei | HCI researcher</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.7/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <base href="https://dream-ly.github.io/">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PFGW5C3');
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PFGW5C3');
-  </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48610112-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-48610112-3');
+    </script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48610112-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-48610112-3');
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
+    <script src="tool.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
-  <script src="tool.js"></script>
+    <style>
+        .research-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 1rem;
+        }
 
-  <style>
-    .research-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 1rem;
-    }
+        .research-tab {
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 999px;
+            font-size: 14px;
+        }
 
-    .research-tab {
-      border: 1px solid #ccc;
-      background: #fff;
-      padding: 6px 12px;
-      cursor: pointer;
-      border-radius: 999px;
-      font-size: 14px;
-    }
+        .research-tab.active {
+            background: #222;
+            color: #fff;
+            border-color: #222;
+        }
 
-    .research-tab.active {
-      background: #222;
-      color: #fff;
-      border-color: #222;
-    }
+        .sidebar-section {
+            margin-bottom: 1.75rem;
+        }
 
-    .sidebar-section {
-      margin-bottom: 1.75rem;
-    }
+        .sidebar-section h2 {
+            margin-bottom: 0.75rem;
+        }
 
-    .sidebar-section h2 {
-      margin-bottom: 0.75rem;
-    }
+        .research-project h6 {
+            margin-bottom: 0.4rem;
+        }
 
-    .collapsible {
-      display: none;
-    }
-
-    .toggle-link {
-      font-size: 13px;
-    }
-
-    .research-project h6 {
-      margin-bottom: 0.4rem;
-    }
-
-    .research-project .text-muted {
-      margin-bottom: 0.55rem;
-    }
-  </style>
+        .research-project .text-muted {
+            margin-bottom: 0.55rem;
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-PFGW5C3"
-      height="0"
-      width="0"
-      style="display:none;visibility:hidden"></iframe>
-  </noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFGW5C3"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-  <header class="container">
-    <h1 class="float-md-left mb-0"><a href="/">Ying Lei</a></h1>
+    <header class="container">
+        <h1 class="float-md-left mb-0">
+            <a href="/">Ying Lei</a>
+        </h1>
+        <ul class="list-inline float-md-right social-icons">
+            <li class="list-inline-item"><a href="https://scholar.google.com.hk/citations?user=AuxxOSYAAAAJ&hl">Google Scholar</a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ying-lei-3a8a6035b/">LinkedIn</a></li>
+            <li class="list-inline-item"><a href="https://x.com/yinghci">Twitter</a></li>
+            <li class="list-inline-item"><a class="email-anchor">Email</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <hr>
+    </header>
 
-    <ul class="list-inline float-md-right social-icons mb-0">
-      <li class="list-inline-item"><a href="https://scholar.google.com.hk/citations?user=AuxxOSYAAAAJ&hl">Google Scholar</a></li>
-      <li class="list-inline-item"><a href="https://www.linkedin.com/in/ying-lei-3a8a6035b/">LinkedIn</a></li>
-      <li class="list-inline-item"><a href="https://x.com/yinghci">Twitter</a></li>
-      <li class="list-inline-item"><a class="email-anchor">Email</a></li>
-    </ul>
+    <div class="container">
 
-    <div class="clearfix"></div>
-    <hr>
-  </header>
+        <div class="row mb-3">
+            <div class="col-xl-8 col-lg-9 col-md-8">
+                <p>
+                    Hi, this is Ying. I am a student researcher working at the intersection of Human-Computer Interaction, Human-centered AI, and Interaction Design.
+                </p>
+                <p>
+                    I see myself, on the one hand, as a technology-oriented researcher.
+                    I am deeply interested in emerging Human-AI relationships, particularly how AI can augment human behavior and cognition, such as in AI-assisted decision-making and behavior intervention.
+                    I am also fascinated by how generative AI reshapes notions of self identity and relationships, for example in contexts like AI-enabled digital immortality.
+                </p>
+                <p>
+                    On the other hand, I approach my work with a strong humanistic lens.
+                    I am interested in how people make sense of themselves and their relationships within complex life contexts.
+                    This includes studying family dynamics in situations such as migration, aging, divorce, and distance, where technologies are deeply entangled with emotional, social, and cultural experiences.
+                </p>
+                <p>
+                    Across my work, I aim to bridge these two perspectives. I combine theory-driven approaches from psychology, sociology, and related fields with both qualitative and quantitative methods to design socio-technical systems that are not only technically innovative, but also socially meaningful, emotionally aware, and ethically grounded.
+                    My work is ultimately motivated by enhancing individual well-being and supporting real-world human needs through the design of emerging technologies.
+                </p>
+                <p>
+                    I received interdisciplinary training in technology and design, which grounds my work in HCI and Human-centered AI.
+                    I am currently pursuing my Master of Science, advised by <a href="https://scholar.google.com/citations?user=krQJJwIAAAAJ&hl=zh-CN">Prof. Carman Neustaedter</a> at the
+                    <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a>,
+                    <a href="https://www.sfu.ca/">Simon Fraser University</a>.
+                    Previously, I earned my B.Eng. in Computer Science, <a href="https://english.ecnu.edu.cn/">East China Normal University</a>
+                    with <a href="https://cs.ecnu.edu.cn/b6/66/c19867a505446/page.htm">the highest honors</a>.
+                </p>
+            </div>
 
-  <main class="container">
-    <section class="row mb-4 align-items-start">
-      <div class="col-xl-8 col-lg-9 col-md-8">
-        <p>
-          Hi, this is Ying. I am a student researcher working at the intersection of
-          Human-Computer Interaction, Human-centered AI, and Interaction Design.
-        </p>
-        <p>
-          I see myself, on the one hand, as a technology-oriented researcher. I am deeply interested in
-          emerging Human-AI relationships, particularly how AI can augment human behavior and cognition,
-          such as in AI-assisted decision-making and behavior intervention. I am also fascinated by how
-          generative AI reshapes notions of self identity and relationships, for example in contexts like
-          AI-enabled digital immortality.
-        </p>
-        <p>
-          On the other hand, I approach my work with a strong humanistic lens. I am interested in how people
-          make sense of themselves and their relationships within complex life contexts. This includes studying
-          family dynamics in situations such as migration, aging, divorce, and distance, where technologies are
-          deeply entangled with emotional, social, and cultural experiences.
-        </p>
-        <p>
-          Across my work, I aim to bridge these two perspectives. I combine theory-driven approaches from
-          psychology, sociology, and related fields with both qualitative and quantitative methods to design
-          socio-technical systems that are not only technically innovative, but also socially meaningful,
-          emotionally aware, and ethically grounded. My work is ultimately motivated by enhancing individual
-          well-being and supporting real-world human needs through the design of emerging technologies.
-        </p>
-        <p>
-          I received interdisciplinary training in technology and design, which grounds my work in HCI and
-          Human-centered AI. I am currently pursuing my Master of Science, advised by
-          <a href="https://scholar.google.com/citations?user=krQJJwIAAAAJ&hl=zh-CN">Prof. Carman Neustaedter</a>
-          at the <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a>,
-          <a href="https://www.sfu.ca/">Simon Fraser University</a>. Previously, I earned my B.Eng. in
-          Computer Science, <a href="https://english.ecnu.edu.cn/">East China Normal University</a>
-          with <a href="https://cs.ecnu.edu.cn/b6/66/c19867a505446/page.htm">the highest honors</a>.
-        </p>
-      </div>
-
-      <div class="offset-xl-1 col-lg-3 col-md-4">
-        <img src="image/me_portrait_medium.jpg" class="portrait" alt="A portrait of Ying Lei">
-      </div>
-    </section>
-
-    <section class="row">
-      <div class="col-lg-8 mb-2">
-        <h2>Selected Research</h2>
-
-        <div class="research-tabs" aria-label="Research filters">
-          <button class="research-tab active" data-tab="selected" type="button">Selected</button>
-          <button class="research-tab" data-tab="all" type="button">All</button>
-          <button class="research-tab" data-tab="hai" type="button">HAI</button>
-          <button class="research-tab" data-tab="wellbeing" type="button">Wellbeing</button>
+            <div class="offset-xl-1 col-lg-3 col-md-4">
+                <img src="image/me_portrait_medium.jpg" class="portrait" alt="a portrait of ying lei">
+            </div>
         </div>
 
-        <div id="research-container" class="research-list"></div>
-      </div>
+        <div class="row">
 
-      <aside class="col-lg-4 mb-2">
-        <section class="sidebar-section">
-          <h2>Latest News</h2>
-          <ul class="news" style="font-size: 13px">
-            <li>March 2026: One paper got accepted by DIS 2026.</li>
-            <li>Feb 2026: One poster got accepted by CHI 2026.</li>
-            <li>Dec 2025: One paper got accepted by ACM Health 2026.</li>
-            <li>May 2025: Attend GI 2025 @Kelowna in person.</li>
-            <li>May 2025: Attend CHI 2025 @Yokohama in person.</li>
-            <li>Mar 2025: Won CHI Best Paper Honorable Mention!</li>
-          </ul>
-          <ul class="news collapsible" id="news-more" style="font-size: 13px">
-            <li>Jan 2025: One paper got accepted by CHI 2025!</li>
-            <li>Sept 2024: Start a new journey at SIAT, SFU.</li>
-            <li>Jul 2024: One paper got accepted by UIST 2024!</li>
-            <li>May 2024: Attend CHI 2024 @Hawaii virtually.</li>
-            <li>Jan 2024: Two papers got accepted by CHI 2024!</li>
-            <li>Jun 2023: Pass my bachelor thesis defense.</li>
-            <li>May 2023: Attend CHI 2023 @Hamburg virtually.</li>
-            <li>Jan 2023: One paper got accepted by CHI 2023!</li>
-          </ul>
-          <a class="toggle-link" data-target="news-more" href="#">More &gt;</a>
-        </section>
+            <!-- left column -->
+            <div class="col-lg-8 mb-2">
+                <h2>
+                    Selected Research
+                </h2>
 
-        <section class="sidebar-section">
-          <h2>Media Cover</h2>
-          <ul class="press" style="font-size: 13px">
-            <li>
-              Dec 2025: Our "AI Afterlife" work gets covered by
-              <a href="https://shuaima.cc/personal_webpage_files/paper_pdf/ChinaDaily.pdf">China Daily</a>!
-            </li>
-          </ul>
-        </section>
+                <div class="research-tabs">
+                    <button class="research-tab active" data-tab="selected" type="button">Selected</button>
+                    <button class="research-tab" data-tab="all" type="button">All</button>
+                    <button class="research-tab" data-tab="hai" type="button">HAI</button>
+                    <button class="research-tab" data-tab="wellbeing" type="button">Wellbeing</button>
+                </div>
 
-        <section class="sidebar-section">
-          <h2>Awards</h2>
-          <ul class="award" style="font-size: 13px">
-            <li>2026 SFU Helmut and Hugo Eppich Family Scholarship</li>
-            <li>2026 SFU Graduate Fellowship</li>
-            <li>2025, 2026 SFU Graduate Fellowship</li>
-            <li>2025 CHI Best Paper Honorable Mention (Top 5%)</li>
-            <li>2025 SFU FCAT Graduate Fellowship</li>
-            <li>2024 Gary Marsden Travel Awards</li>
-            <li>2023 Shanghai Outstanding Graduates Award</li>
-          </ul>
-          <ul class="award collapsible" id="award-more" style="font-size: 13px">
-            <li>2022 Huaxin Scholarship (Top 1%)</li>
-            <li>2022 National 2nd Prize in Outsourcing Innov. &amp; Ent. Competition (Top 1%)</li>
-            <li>2022 National 2nd Prize in Computer Design Competition</li>
-            <li>2021 National 3rd Prize in ICT Competition - Innovation Track</li>
-            <li>2022 Eastern Region 1st Prize in Outsourcing Innov. &amp; Ent. Contest</li>
-            <li>2022 Provincial 2nd Prize in Undergraduate Mathematical Modeling Contest</li>
-            <li>2021 National Key Project Fund (Rank: 3/667)</li>
-            <li>2021 International Honorable Mention in Mathematical Modeling Contest (MCM/ICM)</li>
-          </ul>
-          <a class="toggle-link" data-target="award-more" href="#">More &gt;</a>
-        </section>
+                <div id="research-container" class="research-list"></div>
+            </div>
 
-        <section class="sidebar-section">
-          <h2>Service</h2>
-          <ul style="font-size: 13px">
-            <li>Review: CHI '23 '25 '26, CSCW '25 '26, IMWUT '25, ACM Transactions on Computing for Healthcare</li>
-            <li>Special Recognition for Outstanding Review: CHI '25 '26</li>
-          </ul>
-        </section>
+            <!-- right column -->
+            <div class="col-lg-4 mb-2">
 
-        <section class="sidebar-section">
-          <h2>Teaching</h2>
-          <ul style="font-size: 13px">
-            <li>Spring 2026 - IAT 167 Digital Games: Mechanics, Design and Programming (TA @SFU SIAT)</li>
-            <li>Spring 2025 - IAT 167 Digital Games: Mechanics, Design and Programming (TA @SFU SIAT)</li>
-          </ul>
-        </section>
-      </aside>
-    </section>
-  </main>
+                <div class="sidebar-section">
+                    <h2>Latest News</h2>
+                    <ul class="news" style="font-size: 13px">
+                        <li>March 2026: One paper got accepted by DIS 2026.</li>
+                        <li>Feb 2026: One poster got accepted by CHI 2026.</li>
+                        <li>Dec 2025: One paper got accepted by ACM Health 2026.</li>
+                        <li>May 2025: Attend GI 2025 @Kelowna in person.</li>
+                        <li>May 2025: Attend CHI 2025 @Yokohama in person.</li>
+                        <li>Mar 2025: Won CHI Best Paper Honorable Mention!</li>
+                    </ul>
+                    <ul class="news" id="news-more" style="font-size: 13px; display:none;">
+                        <li>Jan 2025: One paper got accepted by CHI 2025!</li>
+                        <li>Sept 2024: Start a new journey at SIAT, SFU.</li>
+                        <li>Jul 2024: One paper got accepted by UIST 2024!</li>
+                        <li>May 2024: Attend CHI 2024 @Hawaii virtually.</li>
+                        <li>Jan 2024: Two papers got accepted by CHI 2024!</li>
+                        <li>Jun 2023: Pass my bachelor thesis defense.</li>
+                        <li>May 2023: Attend CHI 2023 @Hamburg virtually.</li>
+                        <li>Jan 2023: One paper got accepted by CHI 2023!</li>
+                    </ul>
+                    <a id="toggle-more-news" href="#">More &gt;</a>
+                </div>
 
-  <footer>
-    <div class="container">
-      <small>&copy; 2024 All rights reserved. Webpage template from <a href="https://www.yangzhang.dev/">Yang Zhang</a></small>
+                <div class="sidebar-section">
+                    <h2>Media Cover</h2>
+                    <ul class="press" style="font-size: 13px">
+                        <li>Dec 2025: Our "AI Afterlife" work gets covered by <a href="https://shuaima.cc/personal_webpage_files/paper_pdf/ChinaDaily.pdf">China Daily</a>!</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h2>Awards</h2>
+                    <ul class="award" style="font-size: 13px">
+                        <li>2026 SFU Helmut and Hugo Eppich Family Scholarship</li>
+                        <li>2026 SFU Graduate Fellowship</li>
+                        <li>2025, 2026 SFU Graduate Fellowship</li>
+                        <li>2025 CHI Best Paper Honorable Mention (Top 5%)</li>
+                        <li>2025 SFU FCAT Graduate Fellowship</li>
+                        <li>2024 Gary Marsden Travel Awards</li>
+                        <li>2023 Shanghai Outstanding Graduates Award</li>
+                    </ul>
+                    <ul class="award" id="award-more" style="font-size: 13px; display:none;">
+                        <li>2022 Huaxin Scholarship (Top 1%)</li>
+                        <li>2022 National 2nd Prize in Outsourcing Innov.&amp; Ent. Competition (Top 1%)</li>
+                        <li>2022 National 2nd Prize in Computer Design Competition</li>
+                        <li>2021 National 3rd Prize in ICT Competition - Innovation Track</li>
+                        <li>2022 Eastern Region 1st Prize in Outsourcing Innov.&amp; Ent. Contest</li>
+                        <li>2022 Provincial 2nd Prize in Undergraduate Mathematical Modeling Contest</li>
+                        <li>2021 National Key Project Fund (Rank: 3/667)</li>
+                        <li>2021 International Honorable Mention in Mathematical Modeling Contest (MCM/ICM)</li>
+                    </ul>
+                    <a id="toggle-more-award" href="#">More &gt;</a>
+                </div>
+
+                <div class="sidebar-section">
+                    <h2>Service</h2>
+                    <ul style="font-size: 13px">
+                        <li>Review: CHI '23 '25 '26, CSCW '25 '26, IMWUT '25, ACM Transactions on Computing for Healthcare</li>
+                        <li>Special Recognition for Outstanding Review: CHI '25 '26</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h2>Teaching</h2>
+                    <ul style="font-size: 13px">
+                        <li>Spring 2026 - IAT 167 Digital Games: Mechanics, Design and Programming (TA @SFU SIAT)</li>
+                        <li>Spring 2025 - IAT 167 Digital Games: Mechanics, Design and Programming (TA @SFU SIAT)</li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- /right column -->
+        </div>
+
     </div>
-  </footer>
 
-  <script>
-    const researchProjects = [
-      {
-        title: 'WatchGuardian: Enabling User-Defined Personalized Just-in-Time Intervention on Smartwatch',
-        image: 'research/WatchGuardian/recording_interface.png',
-        authors: '<u>Ying Lei</u>, Yancheng Cao, Will Wang, Yuanzhe Dong, Changchang Yin, Weidan Cao, Ping Zhang, Jingzhen Yang, Bingsheng Yao, Yifan Peng, Chunhua Weng, Randy Auerbach, Lena Mamykina, Dakuo Wang, Yuntao Wang, Xuhai Xu',
-        venue: 'ACM Health 2026',
-        links: [
-          { label: 'PDF', url: 'https://arxiv.org/pdf/2502.05783' }
-        ],
-        description: 'While just-in-time interventions (JITIs) have effectively targeted common health behaviors, individuals often have unique needs to intervene in personal undesirable actions that can negatively affect physical, mental, and social well-being. We present WatchGuardian, a smartwatch-based JITI system that empowers users to define custom interventions for these personal actions with a small number of samples.',
-        tags: ['selected', 'hai', 'wellbeing'],
-        sort: '2026-01-01'
-      },
-      {
-        title: '"AI Afterlife" as Digital Legacy: Perceptions, Expectations, and Concerns',
-        image: 'research/AI-Afterlife/cover.jpg',
-        authors: '<u>Ying Lei</u>, Shuai Ma, Yuling Sun, Xiaojuan Ma',
-        venue: 'CHI 2025',
-        links: [
-          { label: 'PDF', url: 'https://doi.org/10.1145/3706598.3713933' }
-        ],
-        award: 'Best Paper Honorable Mention Award',
-        description: 'The rise of generative AI technology has sparked interest in using digital information to create AI-generated agents as digital legacies. This paper presents a qualitative study examining users\' perceptions, expectations, and concerns regarding AI-generated agents as digital legacies.',
-        tags: ['selected', 'hai', 'wellbeing'],
-        sort: '2025-01-16'
-      },
-      {
-        title: 'FamilyCanvas: A Family Whiteboard Calendar Designed for Blended Families',
-        image: 'research/digital-calendar/cover.png',
-        authors: '<u>Ying Lei</u>, Carman Neustaedter',
-        venue: 'GI 2025 Poster',
-        links: [
-          { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
-        ],
-        description: 'Blended families with joint custody face challenges in scheduling and remote connections. In this study, we aim to design a digital calendar to address these challenges. At this stage, we have designed and developed an initial prototype calendar called FamilyCanvas using a whiteboard metaphor.',
-        tags: ['all', 'wellbeing'],
-        sort: '2025-05-16'
-      },
-      {
-        title: 'Understanding the Effects of Restraining Finger Coactivation in Mid-Air Typing: from a Neuromechanical Perspective',
-        image: 'research/mid-air typing/cover.jpg',
-        authors: 'Hechuan Zhang, Xuewei Liang, <u>Ying Lei</u>, Yanjun Chen, Zhenxuan He, Yu Zhang, Lihan Chen, Hongnan Lin, Teng Han, Feng Tian',
-        venue: 'UIST 2024',
-        links: [
-          { label: 'Video', url: 'https://www.youtube.com/watch?v=fZ4dgLCYmZo' },
-          { label: 'DOI', url: 'https://doi.org/10.1145/3654777.3676441' },
-          { label: 'PDF', url: 'research/mid-air typing/mid-air typing.pdf' },
-          { label: 'Artifact', url: 'research/mid-air typing/artefact.jpg' }
-        ],
-        description: 'Typing in mid-air is often perceived as intuitive yet presents challenges due to finger coactivation, a neuromechanical phenomenon that involves involuntary finger movements stemming from the lack of physical constraints. This paper explores the neuromechanical effects of finger coactivation on mid-air typing, aiming to deepen our understanding and provide valuable insights to improve these interactions.',
-        tags: ['all'],
-        sort: '2024-08-01'
-      },
-      {
-        title: 'Unpacking ICT-supported Social Connections and Support of Late-life Migration: From the Lens of Social Convoys',
-        image: 'research/late-life migrants/cover.jpg',
-        authors: '<u>Ying Lei</u>, Shuai Ma, Yuling Sun.',
-        venue: 'CHI 2024',
-        links: [
-          { label: 'Video', url: 'https://www.youtube.com/watch?v=c02uMf9_7S0' },
-          { label: 'DOI', url: 'https://doi.org/10.1145/3613904.3642898' },
-          { label: 'PDF', url: 'research/late-life migrants/chi24-1000.pdf' }
-        ],
-        description: 'Migration and aging-related dilemmas have limited the opportunities for late-life migrants to rebuild social connections and access support. This paper reports a qualitative study examining the social connections and support of late-life migrants.',
-        tags: ['selected', 'wellbeing'],
-        sort: '2024-05-01'
-      },
-      {
-        title: '"Are You Really Sure?" Understanding the Effects of Human Self-Confidence Calibration in AI-Assisted Decision Making',
-        image: 'research/decision making-confidence/cover.jpg',
-        authors: 'Shuai Ma, Xinru Wang, <u>Ying Lei</u>, Chuhan Shi, Ming Yin, Xiaojuan Ma.',
-        venue: 'CHI 2024',
-        links: [
-          { label: 'Video', url: 'https://www.youtube.com/watch?v=gCRIX8CCUKs' },
-          { label: 'DOI', url: 'https://doi.org/10.1145/3613904.3642671' },
-          { label: 'PDF', url: 'research/decision making-confidence/self_confidence_calibration.pdf' }
-        ],
-        description: 'In AI-assisted decision-making, it is crucial but challenging for humans to achieve appropriate reliance on AI. This paper approaches this problem from a human-centered perspective, human self-confidence calibration.',
-        tags: ['selected', 'hai'],
-        sort: '2024-05-02'
-      },
-      {
-        title: 'Who Should I Trust: AI or Myself? Leveraging Human and AI Correctness Likelihood to Promote Appropriate Trust in AI-Assisted Decision-Making',
-        image: 'research/decision making-trust/cover.jpg',
-        authors: 'Shuai Ma, <u>Ying Lei</u>, Xinru Wang, Chengbo Zheng, Chuhan Shi, Ming Yin, Xiaojuan Ma.',
-        venue: 'CHI 2023',
-        links: [
-          { label: 'Video', url: 'https://www.youtube.com/watch?v=AWdUDaEqoSs' },
-          { label: 'DOI', url: 'https://doi.org/10.1145/3544548.3581058' },
-          { label: 'PDF', url: 'research/decision making-trust/human_AI_CL.pdf' }
-        ],
-        description: 'In AI-assisted decision-making, it is critical for human decision-makers to know when to trust AI and when to trust themselves. In this paper, we proposed to promote humans\' appropriate trust based on the correctness likelihood of both sides at a task-instance level.',
-        tags: ['selected', 'hai'],
-        sort: '2023-05-01'
-      },
-      {
-        title: 'LDM-EEG: A Lightweight EEG Emotion Recognition Method Based on Dual-stream Structure Scaling and Multiple Attention Mechanisms',
-        image: 'research/LDM-EEG/cover.jpg',
-        authors: '<u>Ying Lei</u>, Feng Liu',
-        venue: 'Computer Science 2023',
-        links: [
-          { label: 'DOI', url: 'https://doi.org/10.11896/jsjkx.220300262' },
-          { label: 'PDF', url: 'research/LDM-EEG/LDM-EEG.pdf' }
-        ],
-        description: 'EEG emotion recognition is a multi-channel time-series signal classification problem with high complexity, high information density and massive data. This paper proposes a lightweight network based on dual-stream structural scaling and multiple attention mechanisms.',
-        tags: ['all', 'wellbeing'],
-        sort: '2023-01-01'
-      },
-      {
-        title: 'OPO-FCM: A Computational Affection based OCC-PAD-OCEAN Federation Cognitive Modeling Approach',
-        image: 'research/OPO-FCM/cover.jpg',
-        authors: 'Feng Liu, Han-Yang Wang, Si-Yuan Shen, Xun Jia, Jing-Yi Hu, Jia-Hao Zhang, Xi-Yi Wang, <u>Ying Lei</u>, Aimin Zhou, Jiayin Qi',
-        venue: 'IEEE TCSS 2022',
-        links: [
-          { label: 'DOI', url: 'https://doi.org/10.1109/TCSS.2022.3199119' },
-          { label: 'PDF', url: 'research/OPO-FCM/opo-fcm.pdf' }
-        ],
-        description: 'This work develops a cognitive model that combines deep learning and interpretable emotional psychology frameworks to support computational affection-based modeling.',
-        tags: ['all'],
-        sort: '2022-08-26'
-      },
-      {
-        title: 'Mind Catcher - Affective Computing based Edge-side Music Therapy System',
-        image: 'project/music/cover.jpg',
-        authors: '<u>Ying Lei</u>, Jiaqi Ruan, Yihao Zhou, Shuya Xu, Ruifang Cui',
-        venue: 'National-level Undergraduate Innovation Project',
-        links: [
-          { label: 'PDF', url: 'project/music/report.pdf' },
-          { label: 'System', url: 'project/music/application.jpg' }
-        ],
-        description: 'Identifying and regulating negative emotions is a challenging field. This project uses music therapy as a medium to influence emotions, combining music theory and computer innovation technology to create an edge-side music regulation system based on emotional computing.',
-        tags: ['all', 'wellbeing'],
-        sort: '2022-01-01'
-      }
-    ];
+    <footer>
+        <div class="container">
+            <small>&copy; 2024 All rights reserved. Webpage template from <a href="https://www.yangzhang.dev/">Yang Zhang</a></small>
+        </div>
+    </footer>
 
-    function createProjectHTML(project) {
-      const linksHTML = project.links
-        .map(link => `<a class="info" href="${link.url}">[${link.label}]</a>`)
-        .join(' ');
-
-      const awardHTML = project.award
-        ? `<p class="strong"><i class="fas fa-medal"></i> ${project.award}</p>`
-        : '';
-
-      return `
-        <article class="row research-project" data-sort="${project.sort}">
-          <div class="col-md-4">
-            <img src="${project.image}" class="portrait" alt="Cover image for ${project.title}">
-          </div>
-          <div class="col-md-8">
-            <h6>${project.title}</h6>
-            <p class="text-muted">
-              ${project.authors} (${project.venue})<br>
-              ${linksHTML}
-            </p>
-            ${awardHTML}
-            <p>${project.description}</p>
-          </div>
-          <div class="col-md-12">
-            <hr class="dash">
-          </div>
-        </article>
-      `;
-    }
-
-    function getProjectsForTab(tab) {
-      if (tab === 'all') {
-        return [...researchProjects].sort((a, b) => b.sort.localeCompare(a.sort));
-      }
-
-      return researchProjects
-        .filter(project => project.tags.includes(tab))
-        .sort((a, b) => b.sort.localeCompare(a.sort));
-    }
-
-    function renderResearchProjects(tab) {
-      const container = document.getElementById('research-container');
-      const projects = getProjectsForTab(tab);
-      container.innerHTML = projects.map(createProjectHTML).join('');
-    }
-
-    function setupResearchTabs() {
-      const buttons = document.querySelectorAll('.research-tab');
-
-      buttons.forEach(button => {
-        button.addEventListener('click', () => {
-          buttons.forEach(btn => btn.classList.remove('active'));
-          button.classList.add('active');
-          renderResearchProjects(button.dataset.tab);
-        });
-      });
-    }
-
-    function setupCollapsibles() {
-      document.querySelectorAll('.toggle-link').forEach(link => {
-        link.addEventListener('click', event => {
-          event.preventDefault();
-          const target = document.getElementById(link.dataset.target);
-          const isOpen = target.style.display === 'block';
-          target.style.display = isOpen ? 'none' : 'block';
-          link.textContent = isOpen ? 'More >' : 'Less <';
-        });
-      });
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      setupResearchTabs();
-      setupCollapsibles();
-      renderResearchProjects('selected');
-    });
-  </script>
 </body>
 </html>
