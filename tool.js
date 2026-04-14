@@ -64,6 +64,7 @@ const researchProjectsData = [
         authors: '<u>Ying Lei</u>, Reese Muntean, Carman Neustaedter',
         venue: 'CHI Extended Abstract 2026',
         links: [
+            {'label': 'Website', url: 'https://clab.iat.sfu.ca/FamilyCanvas/'}
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
         description: 'We present a design-oriented study of FamilyCanvas, a digital calendar for blended families, and examine how it was incorporated into everyday family life. We conducted a nine-month autobiographical design, followed by a five-week field study with two additional blended families.',
@@ -76,6 +77,7 @@ const researchProjectsData = [
         authors: 'Denise Y. Geiskkovitch, Carman Neustaedter, <u>Ying Lei</u>, Azadeh Forghani',
         venue: 'DIS 2026',
         links: [
+            { label: 'Video', url: 'https://vimeo.com/693993223?share=copy&fl=sv&fe=ci'}
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
         description: 'We conducted a study in Canada with young children and their parents to explore the needs and preferences of young children when communicating with remote family, limiting the scope to grandparents. Through the use of video prototypes, we found a number of themes related to the types of interactions that devices should afford for young children.',
@@ -176,6 +178,18 @@ const researchProjectsData = [
         description: 'This work develops a cognitive model that combines deep learning and interpretable emotional psychology frameworks to support computational affection-based modeling.',
         tags: ['all'],
         sort: '2022-08-26'
+    },
+    {
+        title: 'Interactive Storytelling Agents for Child Safety Education: Design, Implementation and Evaluation',
+        image: 'project/bachelor/cover.jpg',
+        authors: '<u>Ying Lei</u>',
+        venue: 'Bachelor\'s Thesis',
+        links: [
+            {'label': 'PDF', url: 'project/bachelor/report.pdf'},
+        ],
+        description: 'This thesis explores the use of Human-Centered AI to support child safety education by developing an interactive storytelling agent. To address existing challenges in this domain, I first conducted a formative study to understand the current practices and user needs, and proposed integrating safety education into narrative-based interactions. I then constructed a corpus of children’s safety knowledge through a semi-automated approach, and developed a safety knowledge matching and question answering dataset based on FairytaleQA. Building on this, we designed a GPT-3-based method to generate safety-related questions and answers within story contexts. Finally, I evaluated the system through user studies using interviews and questionnaires.',
+        tags: ['all', 'wellbeing'],
+        sort: '2023-06-01'
     },
     // {
     //     title: 'Mind Catcher-Affective Computing based Edge-side Music Therapy System',
