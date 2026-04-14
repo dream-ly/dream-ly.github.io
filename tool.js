@@ -182,7 +182,7 @@ const researchProjectsData = [
     },
     {
         title: 'Interactive Storytelling Agents for Child Safety Education: Design, Implementation and Evaluation',
-        image: 'project/bachelor/cover.jpg',
+        image: 'project/bachelor/cover.png',
         authors: '<u>Ying Lei</u>',
         venue: 'Bachelor\'s Thesis',
         links: [
