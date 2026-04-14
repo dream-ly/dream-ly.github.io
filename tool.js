@@ -65,6 +65,7 @@ const researchProjectsData = [
         venue: 'CHI Extended Abstract 2026',
         links: [
             {'label': 'Website', url: 'https://clab.iat.sfu.ca/FamilyCanvas/'}
+            {'label': 'Video', url: 'https://vimeo.com/1179352745?share=copy&fl=sv&fe=ci'}
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
         description: 'We present a design-oriented study of FamilyCanvas, a digital calendar for blended families, and examine how it was incorporated into everyday family life. We conducted a nine-month autobiographical design, followed by a five-week field study with two additional blended families.',
