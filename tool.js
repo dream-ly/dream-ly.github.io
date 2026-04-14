@@ -64,7 +64,7 @@ const researchProjectsData = [
         authors: '<u>Ying Lei</u>, Reese Muntean, Carman Neustaedter',
         venue: 'CHI Extended Abstract 2026',
         links: [
-            {'label': 'Website', url: 'https://clab.iat.sfu.ca/FamilyCanvas/'}
+            {'label': 'Website', url: 'https://clab.iat.sfu.ca/FamilyCanvas/'},
             {'label': 'Video', url: 'https://vimeo.com/1179352745?share=copy&fl=sv&fe=ci'}
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
