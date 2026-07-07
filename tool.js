@@ -39,7 +39,7 @@ const researchProjectsData = [
             { label: 'PDF', url: 'https://dl.acm.org/doi/epdf/10.1145/3788689' },
             { label: 'Website', url: 'https://sea-lab.space/Watchguardian/' }
         ],
-        description: 'While just-in-time interventions (JITIs) have effectively targeted common health behaviors, individuals often have unique needs to intervene in personal undesirable actions that can negatively affect physical, mental, and social well-being. We present WatchGuardian, a smartwatch-based JITI system that empowers users to define custom interventions for these personal actions with a small number of samples.',
+        description: 'WatchGuardian is a smartwatch-based just-in-time intervention system that empowers users to define and detect their own undesirable actions from only a small number of samples. This work explores how human-centered AI can support personal agency, everyday wellbeing, and behavior change in real-world contexts.',
         tags: ['selected', 'hai', 'wellbeing'],
         sort: '2026-01-01'
     },
@@ -54,8 +54,8 @@ const researchProjectsData = [
             { label: 'Media', url: 'research/AI-Afterlife//ChinaDaily.pdf' }
         ],
         award: 'Best Paper Honorable Mention Award',
-        description: 'The rise of generative AI technology has sparked interest in using digital information to create AI-generated agents as digital legacies. This paper presents a qualitative study examining users\' perceptions, expectations, and concerns regarding AI-generated agents as digital legacies.',
-        tags: ['selected', 'hai', 'wellbeing'],
+        description: 'This work studies AI-generated agents as posthumous digital legacies. Through a qualitative study, we examine how people imagine AI afterlife systems, and how such agents may reshape identity, remembrance, consent, family relationships, and the ethics of continuing presence after death.',
+        tags: ['selected', 'hai', 'intimacy', 'wellbeing'],
         sort: '2025-01-16'
     },
     {
@@ -68,8 +68,8 @@ const researchProjectsData = [
             {'label': 'Video', url: 'https://vimeo.com/1179352745?share=copy&fl=sv&fe=ci'}
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
-        description: 'We present a design-oriented study of FamilyCanvas, a digital calendar for blended families, and examine how it was incorporated into everyday family life. We conducted a nine-month autobiographical design, followed by a five-week field study with two additional blended families.',
-        tags: ['all', 'wellbeing'],
+        description: 'FamilyCanvas is a digital whiteboard calendar for blended families. Through a nine-month autobiographical design process and a five-week field deployment with two additional families, we examine how shared visibility, coordination, and lightweight communication shape everyday domestic cooperation.',
+        tags: ['selected', 'intimacy', 'wellbeing'],
         sort: '2026-03-01'
     },
     {
@@ -81,8 +81,8 @@ const researchProjectsData = [
             { label: 'Video', url: 'https://vimeo.com/693993223?share=copy&fl=sv&fe=ci'}
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
-        description: 'We conducted a study in Canada with young children and their parents to explore the needs and preferences of young children when communicating with remote family, limiting the scope to grandparents. Through the use of video prototypes, we found a number of themes related to the types of interactions that devices should afford for young children.',
-        tags: ['all', 'wellbeing'],
+        description: 'This study explores how preschool-aged children, parents, and grandparents imagine communication over distance. Through video prototypes, we examine the forms of interaction, parental mediation, and intergenerational care that could support remote family relationships.',
+        tags: ['selected', 'intimacy', 'wellbeing'],
         sort: '2026-04-01'
     },
     {
@@ -93,8 +93,8 @@ const researchProjectsData = [
         links: [
             { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
-        description: 'Blended families with joint custody face challenges in scheduling and remote connections. In this study, we aim to design a digital calendar to address these challenges. At this stage, we have designed and developed an initial prototype calendar called FamilyCanvas using a whiteboard metaphor.',
-        tags: ['all', 'wellbeing'],
+        description: 'This poster presents the initial design of FamilyCanvas, a whiteboard-calendar system for blended families with joint custody. The project investigates how digital family calendars can support scheduling, remote awareness, and everyday coordination across households.',
+        tags: ['all', 'intimacy', 'wellbeing'],
         sort: '2025-05-16'
     },
     {
@@ -122,8 +122,8 @@ const researchProjectsData = [
             { label: 'PDF', url: 'research/late-life migrants/chi24-1000.pdf' },
             { label: 'Video', url: 'https://www.youtube.com/watch?v=c02uMf9_7S0' }
         ],
-        description: 'Migration and aging-related dilemmas have limited the opportunities for late-life migrants to rebuild social connections and access support. This paper reports a qualitative study examining the social connections and support of late-life migrants.',
-        tags: ['selected', 'wellbeing'],
+        description: 'This qualitative study examines how late-life migrants rebuild social connections and access support through ICTs. Using the lens of social convoys, we unpack how aging, migration, family ties, and digital communication shape identity, care, and social support.',
+        tags: ['selected', 'intimacy', 'wellbeing'],
         sort: '2024-05-01'
     },
     {
@@ -136,7 +136,7 @@ const researchProjectsData = [
             { label: 'PDF', url: 'research/decision making-confidence/self_confidence_calibration.pdf' },
             { label: 'Video', url: 'https://www.youtube.com/watch?v=gCRIX8CCUKs' }
         ],
-        description: 'In AI-assisted decision-making, it is crucial but challenging for humans to achieve appropriate reliance on AI. This paper approaches this problem from a human-centered perspective, human self-confidence calibration.',
+        description: 'This work examines appropriate reliance in AI-assisted decision-making from a human-centered perspective. We study how calibrating human self-confidence can help people decide when to trust AI, when to trust themselves, and how to remain agentic under uncertainty.',
         tags: ['selected', 'hai'],
         sort: '2024-05-02'
     },
@@ -150,7 +150,7 @@ const researchProjectsData = [
             { label: 'PDF', url: 'research/decision making-trust/human_AI_CL.pdf' },
             { label: 'Video', url: 'https://www.youtube.com/watch?v=AWdUDaEqoSs' }
         ],
-        description: 'In AI-assisted decision-making, it is critical for human decision-makers to know when to trust AI and when to trust themselves. In this paper, we proposed to promote humans\' appropriate trust based on the correctness likelihood of both sides at a task-instance level.',
+        description: 'This paper investigates how people make trust judgments in AI-assisted decision-making. We propose supporting appropriate reliance by comparing human and AI correctness likelihood at the instance level, helping users decide when to trust AI and when to trust themselves.',
         tags: ['selected', 'hai'],
         sort: '2023-05-01'
     },
@@ -188,8 +188,8 @@ const researchProjectsData = [
         links: [
             {'label': 'PDF', url: 'project/bachelor/report.pdf'},
         ],
-        description: 'This thesis explores the use of Human-Centered AI to support child safety education by developing an interactive storytelling agent. To address existing challenges in this domain, I first conducted a formative study to understand the current practices and user needs, and proposed integrating safety education into narrative-based interactions. I then constructed a corpus of children’s safety knowledge through a semi-automated approach, and developed a safety knowledge matching and question answering dataset based on FairytaleQA. Building on this, we designed a GPT-3-based method to generate safety-related questions and answers within story contexts. Finally, I evaluated the system through user studies using interviews and questionnaires.',
-        tags: ['all', 'wellbeing'],
+        description: 'This thesis explores how interactive storytelling agents can support child safety education. I conducted formative research, built a safety knowledge corpus and question-answering dataset, designed GPT-3-based story interactions, and evaluated the system through user studies.',
+        tags: ['all', 'hai', 'wellbeing'],
         sort: '2023-06-01'
     },
     // {
