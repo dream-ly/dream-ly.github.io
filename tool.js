@@ -30,6 +30,19 @@ function createProjectHTML(project) {
 
 const researchProjectsData = [
     {
+        title: 'From Self to AI Afterlife: Exploring Identity Work Transcending Death',
+        image: 'research/AI-Afterlife-Identity-Work/cover.png',
+        authors: '<u>Ying Lei</u>, Carman Neustaedter, Xiaojuan Ma, Shuai Ma',
+        venue: 'Available at SSRN, 2026',
+        links: [
+            { label: 'DOI', url: 'https://doi.org/10.2139/ssrn.6554164' },
+            { label: 'SSRN', url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6554164' }
+        ],
+        description: 'This work examines how people envision identity work in AI Afterlife. Through a qualitative study, we analyze how identity may be crafted, continued, and relationally negotiated through generative, interactive, and evolving posthumous AI systems.',
+        tags: ['selected', 'self-identity', 'future-systems'],
+        sort: '2026-04-10'
+    },
+    {
         title: 'WatchGuardian: Enabling User-Defined Personalized Just-in-Time Intervention on Smartwatch',
         image: 'research/WatchGuardian/recording_interface.png',
         authors: '<u>Ying Lei</u>, Yancheng Cao, Will Wang, Yuanzhe Dong, Changchang Yin, Weidan Cao, Ping Zhang, Jingzhen Yang, Bingsheng Yao, Yifan Peng, Chunhua Weng, Randy Auerbach, Lena Mamykina, Dakuo Wang, Yuntao Wang, Xuhai Xu',
@@ -39,8 +52,8 @@ const researchProjectsData = [
             { label: 'PDF', url: 'https://dl.acm.org/doi/epdf/10.1145/3788689' },
             { label: 'Website', url: 'https://sea-lab.space/Watchguardian/' }
         ],
-        description: 'WatchGuardian is a smartwatch-based just-in-time intervention system that empowers users to define and detect their own undesirable actions from only a small number of samples. This work explores how human-centered AI can support personal agency, everyday wellbeing, and behavior change in real-world contexts.',
-        tags: ['selected', 'hai', 'wellbeing'],
+        description: 'WatchGuardian is a smartwatch-based just-in-time intervention system that lets users define and detect their own undesirable actions from only a small number of samples. The project explores deployable human-centered AI for personalized behavior change, user-defined interventions, and everyday human agency.',
+        tags: ['selected', 'ai-agency'],
         sort: '2026-01-01'
     },
     {
@@ -54,8 +67,8 @@ const researchProjectsData = [
             { label: 'Media', url: 'research/AI-Afterlife//ChinaDaily.pdf' }
         ],
         award: 'Best Paper Honorable Mention Award',
-        description: 'This work studies AI-generated agents as posthumous digital legacies. Through a qualitative study, we examine how people imagine AI afterlife systems, and how such agents may reshape identity, remembrance, consent, family relationships, and the ethics of continuing presence after death.',
-        tags: ['selected', 'hai', 'intimacy', 'wellbeing'],
+        description: 'This work studies AI-generated agents as posthumous digital legacies. Through a qualitative study, we examine how people imagine AI afterlife systems, and how such agents may reshape posthumous identity, remembrance, consent, family relationships, and the ethics of continuing presence after death.',
+        tags: ['selected', 'self-identity', 'relations-protocols', 'future-systems'],
         sort: '2025-01-16'
     },
     {
@@ -68,8 +81,8 @@ const researchProjectsData = [
             {'label': 'Video', url: 'https://vimeo.com/1179352745?share=copy&fl=sv&fe=ci'}
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
-        description: 'FamilyCanvas is a digital whiteboard calendar for blended families. Through a nine-month autobiographical design process and a five-week field deployment with two additional families, we examine how shared visibility, coordination, and lightweight communication shape everyday domestic cooperation.',
-        tags: ['selected', 'intimacy', 'wellbeing'],
+        description: 'FamilyCanvas is a digital whiteboard calendar for blended families. Through a nine-month autobiographical design process and a five-week field deployment with two additional families, we examine how shared visibility, care work, coordination, and lightweight communication shape everyday domestic cooperation and family protocols.',
+        tags: ['selected', 'relations-protocols'],
         sort: '2026-03-01'
     },
     {
@@ -81,8 +94,8 @@ const researchProjectsData = [
             { label: 'Video', url: 'https://vimeo.com/693993223?share=copy&fl=sv&fe=ci'}
             // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
-        description: 'This study explores how preschool-aged children, parents, and grandparents imagine communication over distance. Through video prototypes, we examine the forms of interaction, parental mediation, and intergenerational care that could support remote family relationships.',
-        tags: ['selected', 'intimacy', 'wellbeing'],
+        description: 'This study explores how preschool-aged children, parents, and grandparents imagine communication over distance. Through video prototypes, we examine interaction forms, parental mediation, and intergenerational care practices that could support remote family relationships.',
+        tags: ['relations-protocols'],
         sort: '2026-04-01'
     },
     {
@@ -93,8 +106,8 @@ const researchProjectsData = [
         links: [
             { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
         ],
-        description: 'This poster presents the initial design of FamilyCanvas, a whiteboard-calendar system for blended families with joint custody. The project investigates how digital family calendars can support scheduling, remote awareness, and everyday coordination across households.',
-        tags: ['all', 'intimacy', 'wellbeing'],
+        description: 'This poster presents the initial design of FamilyCanvas, a whiteboard-calendar system for blended families with joint custody. The project investigates how digital family calendars can support scheduling, remote awareness, shared visibility, and everyday coordination across households.',
+        tags: ['relations-protocols'],
         sort: '2025-05-16'
     },
     {
@@ -109,7 +122,7 @@ const researchProjectsData = [
             { label: 'Artifact', url: 'research/mid-air typing/artefact.jpg' }
         ],
         description: 'Typing in mid-air is often perceived as intuitive yet presents challenges due to finger coactivation, a neuromechanical phenomenon that involves involuntary finger movements stemming from the lack of physical constraints. This paper explores the neuromechanical effects of finger coactivation on mid-air typing, aiming to deepen our understanding and provide valuable insights to improve these interactions.',
-        tags: ['all'],
+        tags: [],
         sort: '2024-08-01'
     },
     {
@@ -122,8 +135,8 @@ const researchProjectsData = [
             { label: 'PDF', url: 'research/late-life migrants/chi24-1000.pdf' },
             { label: 'Video', url: 'https://www.youtube.com/watch?v=c02uMf9_7S0' }
         ],
-        description: 'This qualitative study examines how late-life migrants rebuild social connections and access support through ICTs. Using the lens of social convoys, we unpack how aging, migration, family ties, and digital communication shape identity, care, and social support.',
-        tags: ['selected', 'intimacy', 'wellbeing'],
+        description: 'This qualitative study examines how late-life migrants rebuild social connections and access support through ICTs. Using the lens of social convoys, we unpack how aging, migration, family ties, and digital communication shape identity, care, and ICT-mediated social support.',
+        tags: ['selected', 'relations-protocols'],
         sort: '2024-05-01'
     },
     {
@@ -136,8 +149,8 @@ const researchProjectsData = [
             { label: 'PDF', url: 'research/decision making-confidence/self_confidence_calibration.pdf' },
             { label: 'Video', url: 'https://www.youtube.com/watch?v=gCRIX8CCUKs' }
         ],
-        description: 'This work examines appropriate reliance in AI-assisted decision-making from a human-centered perspective. We study how calibrating human self-confidence can help people decide when to trust AI, when to trust themselves, and how to remain agentic under uncertainty.',
-        tags: ['selected', 'hai'],
+        description: 'This work examines appropriate reliance in AI-assisted decision-making from a human-centered perspective. We study how calibrating human self-confidence can help people decide when to trust AI, when to trust themselves, and how to maintain agency under uncertainty.',
+        tags: ['ai-agency'],
         sort: '2024-05-02'
     },
     {
@@ -150,8 +163,8 @@ const researchProjectsData = [
             { label: 'PDF', url: 'research/decision making-trust/human_AI_CL.pdf' },
             { label: 'Video', url: 'https://www.youtube.com/watch?v=AWdUDaEqoSs' }
         ],
-        description: 'This paper investigates how people make trust judgments in AI-assisted decision-making. We propose supporting appropriate reliance by comparing human and AI correctness likelihood at the instance level, helping users decide when to trust AI and when to trust themselves.',
-        tags: ['selected', 'hai'],
+        description: 'This paper investigates how people make trust judgments in AI-assisted decision-making. We propose supporting appropriate reliance by comparing human and AI correctness likelihood at the instance level, helping users decide when to rely on AI and when to trust their own judgment.',
+        tags: ['ai-agency'],
         sort: '2023-05-01'
     },
     {
@@ -163,8 +176,8 @@ const researchProjectsData = [
             { label: 'DOI', url: 'https://doi.org/10.11896/jsjkx.220300262' },
             { label: 'PDF', url: 'research/LDM-EEG/LDM-EEG.pdf' }
         ],
-        description: 'EEG emotion recognition is a multi-channel time-series signal classification problem with high complexity, high information density and massive data. This paper proposes a lightweight network based on dual-stream structural scaling and multiple attention mechanisms.',
-        tags: ['all', 'wellbeing'],
+        description: 'EEG emotion recognition is a multi-channel time-series signal classification problem with high complexity, high information density, and massive data. This paper proposes a lightweight network based on dual-stream structural scaling and multiple attention mechanisms.',
+        tags: [],
         sort: '2023-01-01'
     },
     {
@@ -176,8 +189,8 @@ const researchProjectsData = [
             { label: 'DOI', url: 'https://doi.org/10.1109/TCSS.2022.3199119' },
             { label: 'PDF', url: 'research/OPO-FCM/opo-fcm.pdf' }
         ],
-        description: 'This work develops a cognitive model that combines deep learning and interpretable emotional psychology frameworks to support computational affection-based modeling.',
-        tags: ['all'],
+        description: 'This work develops a cognitive model that combines deep learning and interpretable emotional psychology frameworks to support computational affection and personality modeling.',
+        tags: [],
         sort: '2022-08-26'
     },
     {
@@ -189,7 +202,7 @@ const researchProjectsData = [
             {'label': 'PDF', url: 'project/bachelor/report.pdf'},
         ],
         description: 'This thesis explores how interactive storytelling agents can support child safety education. I conducted formative research, built a safety knowledge corpus and question-answering dataset, designed GPT-3-based story interactions, and evaluated the system through user studies.',
-        tags: ['all', 'hai', 'wellbeing'],
+        tags: ['ai-agency'],
         sort: '2023-06-01'
     },
     // {
@@ -207,13 +220,23 @@ const researchProjectsData = [
     // }
 ];
 
+const researchTabAliases = {
+    selected: ['selected'],
+    'ai-agency': ['ai-agency'],
+    'self-identity': ['self-identity'],
+    'relations-protocols': ['relations-protocols'],
+    'future-systems': ['future-systems']
+};
+
 function getProjectsForTab(tab) {
     if (tab === 'all') {
         return [...researchProjectsData].sort((a, b) => b.sort.localeCompare(a.sort));
     }
 
+    const tabTags = researchTabAliases[tab] || [tab];
+
     return researchProjectsData
-        .filter(project => project.tags.includes(tab))
+        .filter(project => project.tags.some(tag => tabTags.includes(tag)))
         .sort((a, b) => b.sort.localeCompare(a.sort));
 }
 
@@ -283,10 +306,18 @@ function setupEmailAnchor() {
     });
 }
 
+function setupProfilePhoto() {
+    const photo = document.getElementById('profile-photo');
+    if (!photo || !photo.dataset.src) return;
+
+    photo.src = new URL(photo.dataset.src, window.location.href).href;
+}
+
 $(function () {
     setupResearchTabs();
     setupCollapsibles();
     setupVideoAutoplayOnScroll();
     setupEmailAnchor();
+    setupProfilePhoto();
     renderResearchProjects('selected');
 });

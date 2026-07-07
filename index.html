@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.7/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <base href="https://dream-ly.github.io/">
-    <title>Ying Lei | HCI & Human-Centered AI Researcher</title>
-    <meta name="description" content="Ying Lei studies how AI agents enter intimate, domestic, and posthumous human relationships, and how they reshape identity, care, trust, cooperation, and social protocols.">
+    <title>Ying Lei | Future Socio-Technical Systems</title>
+    <meta name="description" content="Ying Lei studies and designs future socio-technical systems, especially emerging AI and agentic systems, and examines how they reshape identity, care, trust, cooperation, agency, and social protocols.">
 
     <!-- Google Tag Manager -->
     <script>
@@ -40,7 +40,15 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
-    <script src="tool.js"></script>
+    <script>
+        (function () {
+            var toolSrc = new URL('tool.js', window.location.href).href;
+            if (window.location.protocol !== 'file:') {
+                toolSrc += '?v=20260707-research-tabs';
+            }
+            document.write('<script src="' + toolSrc + '"><\/script>');
+        })();
+    </script>
 
     <style>
         .research-tabs {
@@ -73,6 +81,23 @@
             margin-bottom: 0.75rem;
         }
 
+        .intro-row {
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .bio-column p {
+            line-height: 1.58;
+            margin-bottom: 0.85rem;
+        }
+
+        .profile-photo {
+            display: block;
+            max-width: 260px;
+            margin-left: auto;
+            border-radius: 6px;
+        }
+
         .research-project h6 {
             margin-bottom: 0.4rem;
         }
@@ -95,6 +120,17 @@
         .research-focus ul {
             margin-bottom: 0;
             padding-left: 1.1rem;
+        }
+
+        .sidebar-section ul {
+            padding-left: 1.25rem;
+        }
+
+        @media (max-width: 767.98px) {
+            .profile-photo {
+                margin: 1rem auto 0 auto;
+                max-width: 240px;
+            }
         }
     </style>
 </head>
@@ -123,37 +159,38 @@
 
     <div class="container">
 
-        <div class="row mb-3">
-            <div class="col-xl-8 col-lg-9 col-md-8">
+        <div class="row intro-row">
+            <div class="col-xl-8 col-lg-9 col-md-8 bio-column">
                 <p>
-                    Hi, this is Ying. I am a Human-Computer Interaction and Human-centered AI researcher studying how AI agents enter intimate, domestic, and posthumous human relationships, and how they reshape identity, care, trust, cooperation, and social protocols.
+                    I am a Human-Computer Interaction and Human-centered AI researcher studying future socio-technical systems. My work asks how emerging computational systems, especially AI agents, enter human life not only as tools, but as social actors, infrastructures, and speculative forms of organization.
                 </p>
                 <p>
-                    My work examines AI not only as a tool for productivity, but also as a social and relational infrastructure. I am interested in how people live with AI systems in emotionally complex contexts, such as digital legacy and AI afterlife, blended family coordination, long-distance intergenerational communication, migration, aging, divorce, and everyday wellbeing.
+                    I am interested in how these systems reshape the conditions under which people understand themselves, relate to others, coordinate care, negotiate trust, and maintain social life. My research spans AI afterlife, family and domestic technologies, personalized behavior intervention, AI-assisted decision-making, and distance communication. Across these contexts, I examine how technology transforms self-identity, memory, intimacy, responsibility, cooperation, human agency, and social protocols.
                 </p>
                 <p>
-                    I combine system building, interaction design, qualitative inquiry, quantitative analysis, and field deployment to study these questions in real-world settings. Across projects, I aim to turn human insights into deployable socio-technical systems that are technically robust, socially meaningful, emotionally aware, and ethically grounded.
+                    I approach research as both empirical inquiry and speculative design. I study existing human practices through qualitative and quantitative methods, while also designing and building systems that probe possible futures. Rather than treating future technologies as distant abstractions, I use prototypes, deployments, and design artifacts to make emerging social, ethical, and relational tensions visible in everyday life.
                 </p>
-                <div class="research-focus">
-                    <p><strong>Research focus:</strong></p>
-                    <ul>
-                        <li>AI agents in intimate, domestic, and posthumous life</li>
-                        <li>Identity, care, trust, and cooperation in human-AI relationships</li>
-                        <li>Family technologies for coordination, distance, and social support</li>
-                        <li>Human agency, wellbeing, and appropriate reliance in AI systems</li>
-                    </ul>
-                </div>
                 <p>
-                    I received interdisciplinary training in technology and design, which grounds my work in HCI and Human-centered AI. I am currently pursuing my Master of Science, advised by <a href="https://scholar.google.com/citations?user=krQJJwIAAAAJ&hl=zh-CN">Prof. Carman Neustaedter</a> at the
+                    I received interdisciplinary training in technology and design, which grounds my work in HCI, Human-centered AI, and Interaction Design. I am currently pursuing my Master of Science, advised by <a href="https://scholar.google.com/citations?user=krQJJwIAAAAJ&hl=zh-CN">Prof. Carman Neustaedter</a> at the
                     <a href="https://www.sfu.ca/siat.html">School of Interactive Arts and Technology</a>,
                     <a href="https://www.sfu.ca/">Simon Fraser University</a>.
                     Previously, I earned my B.Eng. in Computer Science, <a href="https://english.ecnu.edu.cn/">East China Normal University</a>
                     with <a href="https://cs.ecnu.edu.cn/b6/66/c19867a505446/page.htm">the highest honors</a>.
                 </p>
+                <div class="research-focus">
+                    <p><strong>Research Focus</strong></p>
+                    <p>Future socio-technical systems for identity, care, cooperation, and human agency.</p>
+                    <ul>
+                        <li>AI agents and emerging computational systems in everyday life</li>
+                        <li>Self-identity, memory, care, trust, and cooperation</li>
+                        <li>Social protocols in domestic, posthumous, and decision-making contexts</li>
+                        <li>Empirical HCI, speculative design, and deployable system building</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="offset-xl-1 col-lg-3 col-md-4">
-                <img src="image/me_portrait_medium.jpg" class="portrait" alt="a portrait of ying lei">
+                <img id="profile-photo" src="image/me_portrait_medium.jpg" data-src="image/me_portrait_2026.jpg" class="portrait profile-photo" alt="a portrait of ying lei">
             </div>
         </div>
 
@@ -168,9 +205,10 @@
                 <div class="research-tabs">
                     <button class="research-tab active" data-tab="selected" type="button">Selected</button>
                     <button class="research-tab" data-tab="all" type="button">All</button>
-                    <button class="research-tab" data-tab="hai" type="button">Human-AI</button>
-                    <button class="research-tab" data-tab="intimacy" type="button">Intimacy &amp; Family</button>
-                    <button class="research-tab" data-tab="wellbeing" type="button">Wellbeing</button>
+                    <button class="research-tab" data-tab="ai-agency" type="button">AI &amp; Agency</button>
+                    <button class="research-tab" data-tab="self-identity" type="button">Self &amp; Identity</button>
+                    <button class="research-tab" data-tab="relations-protocols" type="button">Relations &amp; Protocols</button>
+                    <button class="research-tab" data-tab="future-systems" type="button">Future Systems</button>
                 </div>
 
                 <div id="research-container" class="research-list"></div>
@@ -182,7 +220,6 @@
                 <div class="sidebar-section">
                     <h2>Latest News</h2>
                     <ul class="news" style="font-size: 13px">
-                        <li>Jul 2026: Developing new work on AI agents in intimate, domestic, and posthumous life.</li>
                         <li>March 2026: One paper got accepted by DIS 2026.</li>
                         <li>Feb 2026: One poster got accepted by CHI 2026.</li>
                         <li>May 2025: Attend GI 2025 @Kelowna in person.</li>
