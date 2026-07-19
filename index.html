@@ -83,19 +83,29 @@
 
         .intro-row {
             align-items: flex-start;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         .bio-column p {
-            line-height: 1.58;
-            margin-bottom: 0.85rem;
+            line-height: 1.62;
+            margin-bottom: 1rem;
+        }
+
+        .profile-column {
+            padding-left: 2rem;
         }
 
         .profile-photo {
             display: block;
-            max-width: 260px;
-            margin-left: auto;
+            width: 100%;
+            max-width: 270px;
+            margin: 0 auto 1.25rem auto;
             border-radius: 6px;
+        }
+
+        .profile-focus {
+            max-width: 270px;
+            margin: 0 auto;
         }
 
         .research-project h6 {
@@ -108,28 +118,55 @@
 
         .research-focus {
             border-left: 3px solid #222;
-            padding-left: 1rem;
-            margin: 1rem 0 1.25rem 0;
-            font-size: 14px;
+            padding: 0.15rem 0 0.15rem 1rem;
+            margin: 0;
+            font-size: 13px;
+            line-height: 1.45;
         }
 
         .research-focus p {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.55rem;
+        }
+
+        .research-focus .focus-tagline {
+            color: #555;
         }
 
         .research-focus ul {
             margin-bottom: 0;
-            padding-left: 1.1rem;
+            padding-left: 1rem;
+        }
+
+        .research-focus li {
+            margin-bottom: 0.38rem;
+        }
+
+        .research-focus li:last-child {
+            margin-bottom: 0;
         }
 
         .sidebar-section ul {
             padding-left: 1.25rem;
         }
 
+        @media (max-width: 991.98px) {
+            .profile-column {
+                padding-left: 1rem;
+            }
+        }
+
         @media (max-width: 767.98px) {
+            .profile-column {
+                padding-left: 15px;
+                margin-top: 1.25rem;
+            }
+
             .profile-photo {
-                margin: 1rem auto 0 auto;
                 max-width: 240px;
+            }
+
+            .profile-focus {
+                max-width: 100%;
             }
         }
     </style>
@@ -160,7 +197,7 @@
     <div class="container">
 
         <div class="row intro-row">
-            <div class="col-xl-8 col-lg-9 col-md-8 bio-column">
+            <div class="col-lg-8 col-md-8 bio-column">
                 <p>
                     I am a Human-Computer Interaction and Human-centered AI researcher studying future socio-technical systems. My work examines how emerging computational systems, especially AI agents, enter human life not only as tools, but as participants in everyday practices, relationships, and social organization. I also explore how designed systems can serve as probes into possible futures, making emerging forms of computational agency and human–technology interaction tangible and open to inquiry.
                 </p>
@@ -177,21 +214,24 @@
                     Previously, I earned my B.Eng. in Computer Science, <a href="https://english.ecnu.edu.cn/">East China Normal University</a>
                     with <a href="https://cs.ecnu.edu.cn/b6/66/c19867a505446/page.htm">the highest honors</a>.
                 </p>
-                <div class="research-focus">
-                    <p><strong>Research Focus</strong></p>
-                    <p>Future socio-technical systems for better self understanding and social life.</p>
-                    <ul>
-                        <li>AI agents and computational systems as participants in human life and probes into possible futures</li>
-                        <li>Self-understanding, identity, memory, agency, and personal narratives</li>
-                        <li>Connection, support, intimacy, trust, cooperation, and emerging social protocols</li>
-                        <li>Selfhood, domestic, relational, posthumous, and institutional futures</li>
-                        <li>Empirical, speculative, and systems-oriented HCI research</li>
-                    </ul>
-                </div>
             </div>
 
-            <div class="offset-xl-1 col-lg-3 col-md-4">
-                <img id="profile-photo" src="image/me_portrait_medium.jpg" data-src="image/me_portrait_2026.jpg" class="portrait profile-photo" alt="a portrait of ying lei">
+            <div class="col-lg-4 col-md-4 profile-column">
+                <img id="profile-photo" src="image/me_portrait_medium.jpg" data-src="image/me_portrait_2026.jpg" class="portrait profile-photo" alt="a portrait of Ying Lei">
+
+                <div class="profile-focus">
+                    <div class="research-focus">
+                        <p><strong>Research Focus</strong></p>
+                        <p class="focus-tagline">Future socio-technical systems for better self-understanding and social life.</p>
+                        <ul>
+                            <li>AI agents and computational systems as participants in human life and probes into possible futures</li>
+                            <li>Self-understanding, identity, memory, agency, and personal narratives</li>
+                            <li>Connection, support, intimacy, trust, cooperation, and emerging social protocols</li>
+                            <li>Selfhood, domestic, relational, posthumous, and institutional futures</li>
+                            <li>Empirical, speculative, and systems-oriented HCI research</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
