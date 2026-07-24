@@ -111,7 +111,8 @@ div.research-project p {
 
 .news {
     font-size: 15px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #news-more {
@@ -120,7 +121,8 @@ div.research-project p {
 
 .travels {
     font-size: 15px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #travels-more {
@@ -129,16 +131,23 @@ div.research-project p {
 
 .press {
     font-size: 15px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .award {
     font-size: 15px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #award-more {
     display: none;
+}
+
+.sidebar-section > a[id^="toggle-more-"] {
+    display: inline-block;
+    margin-top: 0.35rem;
 }
 
 .tweets {
