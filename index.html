@@ -217,7 +217,13 @@
             </div>
 
             <div class="col-lg-4 col-md-4 profile-column">
-                <img id="profile-photo" src="image/me_portrait_medium.jpg" data-src="image/me_portrait_2026.jpg" class="portrait profile-photo" alt="a portrait of Ying Lei">
+                <img id="profile-photo" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="image/me_portrait_2026.jpg" class="portrait profile-photo" alt="a portrait of Ying Lei">
+                <script>
+                    (function () {
+                        var photo = document.getElementById('profile-photo');
+                        photo.src = new URL(photo.dataset.src, window.location.href).href;
+                    })();
+                </script>
 
                 <div class="profile-focus">
                     <div class="research-focus">
