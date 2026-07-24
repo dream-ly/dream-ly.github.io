@@ -270,6 +270,15 @@ function setupCollapsibles() {
         return false;
     });
 
+    $('#toggle-more-travels').click(function () {
+        $('#travels-more').slideToggle(function () {
+            $('#travels-more').is(':visible')
+                ? $('#toggle-more-travels').text('< Less')
+                : $('#toggle-more-travels').text('More >');
+        });
+        return false;
+    });
+
     $('#toggle-more-award').click(function () {
         $('#award-more').slideToggle(function () {
             $('#award-more').is(':visible')
