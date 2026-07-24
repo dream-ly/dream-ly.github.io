@@ -118,6 +118,15 @@ div.research-project p {
     display: none;
 }
 
+.travels {
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+#travels-more {
+    display: none;
+}
+
 .press {
     font-size: 15px;
     margin-bottom: 0px;
