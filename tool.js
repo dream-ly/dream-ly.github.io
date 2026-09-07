@@ -50,7 +50,8 @@ const researchProjectsData = [
         links: [
             { label: 'DOI', url: 'https://doi.org/10.1145/3788689' },
             { label: 'PDF', url: 'https://dl.acm.org/doi/epdf/10.1145/3788689' },
-            { label: 'Website', url: 'https://sea-lab.space/Watchguardian/' }
+            { label: 'Website', url: 'https://sea-lab.space/Watchguardian/' },
+            { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/watchguardian.html' }
         ],
         description: 'WatchGuardian is a smartwatch-based just-in-time intervention system that lets users define and detect their own undesirable actions from only a small number of samples. The project explores deployable human-centered AI for personalized behavior change, user-defined interventions, and everyday human agency.',
         tags: ['selected', 'ai-agency'],
@@ -64,7 +65,8 @@ const researchProjectsData = [
         links: [
             { label: 'DOI', url: 'https://doi.org/10.1145/3706598.3713933' },
             { label: 'PDF', url: 'https://dl.acm.org/doi/epdf/10.1145/3706598.3713933' },
-            { label: 'Media', url: 'research/AI-Afterlife//ChinaDaily.pdf' }
+            { label: 'Media', url: 'research/AI-Afterlife//ChinaDaily.pdf' },
+            { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/multimodal-agent.html' }
         ],
         award: 'Best Paper Honorable Mention Award',
         description: 'This work studies AI-generated agents as posthumous digital legacies. Through a qualitative study, we examine how people imagine AI afterlife systems, and how such agents may reshape posthumous identity, remembrance, consent, family relationships, and the ethics of continuing presence after death.',
@@ -77,9 +79,9 @@ const researchProjectsData = [
         authors: '<u>Ying Lei</u>, Reese Muntean, Carman Neustaedter',
         venue: 'CHI Extended Abstract 2026',
         links: [
-            {'label': 'Website', url: 'https://clab.iat.sfu.ca/FamilyCanvas/'},
-            {'label': 'Video', url: 'https://vimeo.com/1179352745?share=copy&fl=sv&fe=ci'}
-            // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
+            {label: 'Website', url: 'https://clab.iat.sfu.ca/FamilyCanvas/'},
+            {label: 'Video', url: 'https://vimeo.com/1179352745?share=copy&fl=sv&fe=ci'},
+            {label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/familycanvas.html' }
         ],
         description: 'FamilyCanvas is a digital whiteboard calendar for blended families. Through a nine-month autobiographical design process and a five-week field deployment with two additional families, we examine how shared visibility, care work, coordination, and lightweight communication shape everyday domestic cooperation and family protocols.',
         tags: ['selected', 'relations-protocols'],
@@ -91,8 +93,8 @@ const researchProjectsData = [
         authors: 'Denise Y. Geiskkovitch, Carman Neustaedter, <u>Ying Lei</u>, Azadeh Forghani',
         venue: 'DIS 2026',
         links: [
-            { label: 'Video', url: 'https://vimeo.com/693993223?share=copy&fl=sv&fe=ci'}
-            // { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
+            { label: 'Video', url: 'https://vimeo.com/693993223?share=copy&fl=sv&fe=ci'},
+            { label: 'PDF', url: 'https://dl.acm.org/doi/pdf/10.1145/3800645.3813078' }
         ],
         description: 'This study explores how preschool-aged children, parents, and grandparents imagine communication over distance. Through video prototypes, we examine interaction forms, parental mediation, and intergenerational care practices that could support remote family relationships.',
         tags: ['relations-protocols'],
@@ -147,7 +149,8 @@ const researchProjectsData = [
         links: [
             { label: 'DOI', url: 'https://doi.org/10.1145/3613904.3642671' },
             { label: 'PDF', url: 'research/decision making-confidence/self_confidence_calibration.pdf' },
-            { label: 'Video', url: 'https://www.youtube.com/watch?v=gCRIX8CCUKs' }
+            { label: 'Video', url: 'https://www.youtube.com/watch?v=gCRIX8CCUKs' },
+            { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/decision-intelligence.html' }
         ],
         description: 'This work examines appropriate reliance in AI-assisted decision-making from a human-centered perspective. We study how calibrating human self-confidence can help people decide when to trust AI, when to trust themselves, and how to maintain agency under uncertainty.',
         tags: ['ai-agency'],
@@ -161,7 +164,8 @@ const researchProjectsData = [
         links: [
             { label: 'DOI', url: 'https://doi.org/10.1145/3544548.3581058' },
             { label: 'PDF', url: 'research/decision making-trust/human_AI_CL.pdf' },
-            { label: 'Video', url: 'https://www.youtube.com/watch?v=AWdUDaEqoSs' }
+            { label: 'Video', url: 'https://www.youtube.com/watch?v=AWdUDaEqoSs' },
+            { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/decision-intelligence.html' }
         ],
         description: 'This paper investigates how people make trust judgments in AI-assisted decision-making. We propose supporting appropriate reliance by comparing human and AI correctness likelihood at the instance level, helping users decide when to rely on AI and when to trust their own judgment.',
         tags: ['ai-agency'],
