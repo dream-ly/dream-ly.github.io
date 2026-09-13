@@ -181,7 +181,7 @@ const researchProjectsData = [
             { label: 'PDF', url: 'research/LDM-EEG/LDM-EEG.pdf' }
         ],
         description: 'EEG emotion recognition is a multi-channel time-series signal classification problem with high complexity, high information density, and massive data. This paper proposes a lightweight network based on dual-stream structural scaling and multiple attention mechanisms.',
-        tags: [],
+        tags: ['ai-agency'],
         sort: '2023-01-01'
     },
     {
@@ -194,7 +194,7 @@ const researchProjectsData = [
             { label: 'PDF', url: 'research/OPO-FCM/opo-fcm.pdf' }
         ],
         description: 'This work develops a cognitive model that combines deep learning and interpretable emotional psychology frameworks to support computational affection and personality modeling.',
-        tags: [],
+        tags: ['ai-agency'],
         sort: '2022-08-26'
     },
     {
