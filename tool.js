@@ -173,7 +173,7 @@ const researchProjectsData = [
             { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/decision-intelligence.html' }
         ],
         description: 'This work examines appropriate reliance in AI-assisted decision-making by focusing on a capability people bring to the interaction: knowing when their own judgment is likely to be right or wrong. We study how calibrating human self-confidence can help people navigate disagreement with AI and make more informed decisions about when to rely on AI versus themselves.',
-        tags: ['ai-agency'],
+        tags: ['selected', 'ai-agency'],
         sort: '2024-05-02'
     },
     {
@@ -215,7 +215,7 @@ const researchProjectsData = [
             { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/decision-intelligence.html' }
         ],
         description: 'This work investigates appropriate reliance in AI-assisted decision-making by considering the relative capabilities of humans and AI at the instance level. We explore how estimates of both human and AI correctness likelihood can help people recognize when AI is likely to complement their own judgment and decide whose answer to rely on.',
-        tags: ['ai-agency'],
+        tags: ['selected', 'ai-agency'],
         sort: '2023-05-01'
     },
     {
