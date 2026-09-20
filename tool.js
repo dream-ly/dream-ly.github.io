@@ -191,18 +191,18 @@ const researchProjectsData = [
         sort: '2024-05-01',
         selectedOrder: 7
     },
-    {
-        title: 'Interactive Storytelling Agents for Child Safety Education: Design, Implementation and Evaluation',
-        image: 'project/bachelor/cover.png',
-        authors: '<u>Ying Lei</u>',
-        venue: 'Bachelor\'s Thesis',
-        links: [
-            { label: 'PDF', url: 'project/bachelor/report.pdf' }
-        ],
-        description: 'This thesis explores how interactive storytelling agents can support child safety education. I conducted formative research, built a safety knowledge corpus and question-answering dataset, designed GPT-3-based story interactions, and evaluated the system through user studies.',
-        tags: ['ai-agency'],
-        sort: '2023-06-01'
-    },
+    // {
+    //     title: 'Interactive Storytelling Agents for Child Safety Education: Design, Implementation and Evaluation',
+    //     image: 'project/bachelor/cover.png',
+    //     authors: '<u>Ying Lei</u>',
+    //     venue: 'Bachelor\'s Thesis',
+    //     links: [
+    //         { label: 'PDF', url: 'project/bachelor/report.pdf' }
+    //     ],
+    //     description: 'This thesis explores how interactive storytelling agents can support child safety education. I conducted formative research, built a safety knowledge corpus and question-answering dataset, designed GPT-3-based story interactions, and evaluated the system through user studies.',
+    //     tags: ['ai-agency'],
+    //     sort: '2023-06-01'
+    // },
     {
         title: 'Who Should I Trust: AI or Myself? Leveraging Human and AI Correctness Likelihood to Promote Appropriate Trust in AI-Assisted Decision-Making',
         image: 'research/decision making-trust/cover.jpg',
