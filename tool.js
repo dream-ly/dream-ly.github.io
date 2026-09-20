@@ -50,7 +50,7 @@ const researchProjectsData = [
     },
     {
         title: '"They Didn’t Tell Me Until the Last Minute": Understanding and Designing for Scheduling and Awareness in Blended Families through a Digital Calendar',
-        image: 'research/digital-calendar/cover-1.png',
+        image: 'research/digital-calendar/cover-2.png',
         authors: '<u>Ying Lei</u>, Reese Muntean, Carman Neustaedter',
         venue: 'Under Review',
         links: [],
