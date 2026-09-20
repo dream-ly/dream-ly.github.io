@@ -44,7 +44,7 @@ const researchProjectsData = [
         venue: 'Under Review',
         links: [],
         description: 'This work examines how divorced parents incorporate generative AI into ongoing co-parenting practices. We investigate how AI becomes situated within existing relational and coordination structures, reshaping communication, negotiation, and emotional engagement while raising new questions about privacy, authority, responsibility, and the boundaries of AI involvement.',
-        tags: ['selected', 'relations-protocols'],
+        tags: ['selected', 'ai-agency', 'relations-protocols'],
         sort: '2026-09-01',
         selectedOrder: 1
     },
@@ -69,7 +69,7 @@ const researchProjectsData = [
             { label: 'SSRN', url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6554164' }
         ],
         description: 'This work examines how people envision identity work in AI Afterlife. We investigate how generative and evolving AI systems may enable identities to be crafted, continued, and relationally negotiated beyond death, raising broader questions about who can shape an AI-mediated identity and how it should change over time.',
-        tags: ['selected', 'self-identity', 'relations-protocols'],
+        tags: ['selected', 'ai-agency', 'self-identity', 'relations-protocols'],
         sort: '2026-04-10',
         selectedOrder: 4
     },
