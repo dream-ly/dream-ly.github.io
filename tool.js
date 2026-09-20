@@ -117,18 +117,18 @@ const researchProjectsData = [
         sort: '2026-01-01',
         selectedOrder: 6
     },
-    {
-        title: 'FamilyCanvas: A Family Whiteboard Calendar Designed for Blended Families',
-        image: 'research/digital-calendar/cover.png',
-        authors: '<u>Ying Lei</u>, Carman Neustaedter',
-        venue: 'GI 2025 Poster',
-        links: [
-            { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
-        ],
-        description: 'This poster presents the initial design of FamilyCanvas, a whiteboard-calendar system for blended families with joint custody. The project investigates how digital family calendars can support scheduling, remote awareness, shared visibility, and everyday coordination across households.',
-        tags: ['relations-protocols'],
-        sort: '2025-05-16'
-    },
+    // {
+    //     title: 'FamilyCanvas: A Family Whiteboard Calendar Designed for Blended Families',
+    //     image: 'research/digital-calendar/cover.png',
+    //     authors: '<u>Ying Lei</u>, Carman Neustaedter',
+    //     venue: 'GI 2025 Poster',
+    //     links: [
+    //         { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
+    //     ],
+    //     description: 'This poster presents the initial design of FamilyCanvas, a whiteboard-calendar system for blended families with joint custody. The project investigates how digital family calendars can support scheduling, remote awareness, shared visibility, and everyday coordination across households.',
+    //     tags: ['relations-protocols'],
+    //     sort: '2025-05-16'
+    // },
     {
         title: '"AI Afterlife" as Digital Legacy: Perceptions, Expectations, and Concerns',
         image: 'research/AI-Afterlife/cover.jpg',
