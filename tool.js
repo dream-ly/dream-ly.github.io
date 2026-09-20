@@ -44,7 +44,7 @@ const researchProjectsData = [
         venue: 'Under Review',
         links: [],
         description: 'This work examines how divorced parents incorporate generative AI into ongoing co-parenting practices. We investigate how AI becomes situated within existing relational and coordination structures, reshaping communication, negotiation, and emotional engagement while raising new questions about privacy, authority, responsibility, and the boundaries of AI involvement.',
-        tags: ['selected', 'relations-protocols', 'future-systems'],
+        tags: ['selected', 'relations-protocols'],
         sort: '2026-09-01',
         selectedOrder: 1
     },
@@ -69,7 +69,7 @@ const researchProjectsData = [
             { label: 'SSRN', url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6554164' }
         ],
         description: 'This work examines how people envision identity work in AI Afterlife. We investigate how generative and evolving AI systems may enable identities to be crafted, continued, and relationally negotiated beyond death, raising broader questions about who can shape an AI-mediated identity and how it should change over time.',
-        tags: ['selected', 'self-identity', 'relations-protocols', 'future-systems'],
+        tags: ['selected', 'self-identity', 'relations-protocols'],
         sort: '2026-04-10',
         selectedOrder: 4
     },
@@ -142,7 +142,7 @@ const researchProjectsData = [
         ],
         award: 'Best Paper Honorable Mention Award',
         description: 'This work examines how people perceive and envision their own AI-generated agents as posthumous digital legacies, including how these agents might later interact with loved ones and continue their presence and values. We explore how emerging AI capabilities complicate identity consistency, consent, family relationships, support, and the boundaries of a person’s influence after death.',
-        tags: ['selected', 'ai-agency', 'self-identity', 'relations-protocols', 'future-systems'],
+        tags: ['selected', 'ai-agency', 'self-identity', 'relations-protocols'],
         sort: '2025-01-16',
         selectedOrder: 5
     },
@@ -264,8 +264,7 @@ const researchTabAliases = {
     selected: ['selected'],
     'ai-agency': ['ai-agency'],
     'self-identity': ['self-identity'],
-    'relations-protocols': ['relations-protocols'],
-    'future-systems': ['future-systems']
+    'relations-protocols': ['relations-protocols']
 };
 
 function getProjectsForTab(tab) {
