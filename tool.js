@@ -7,10 +7,17 @@ function createProjectHTML(project) {
         ? `<p class="strong"><i class="fas fa-medal"></i> ${project.award}</p>`
         : '';
 
+    const imageCaptionHTML = project.imageCaption
+        ? `<div class="text-muted" style="font-size: 0.72rem; margin-top: 4px; text-align: center;">
+               ${project.imageCaption}
+           </div>`
+        : '';
+
     return `
         <div class="row research-project" data-sort="${project.sort}">
             <div class="col-md-4">
                 <img src="${project.image}" class="portrait" alt="cover">
+                ${imageCaptionHTML}
             </div>
             <div class="col-md-8">
                 <h6>${project.title}</h6>
@@ -32,12 +39,14 @@ const researchProjectsData = [
     {
         title: 'Exploring AI-Mediated Co-Parenting: Practices, Influences, and Tensions',
         image: 'research/AI-coparenting/cover.png',
+        imageCaption: 'AI-generated illustration',
         authors: '<u>Ying Lei</u>, Botao "Amber" Hu, Shuai Ma, Carman Neustaedter',
         venue: 'Under Review',
         links: [],
         description: 'This work examines how divorced parents incorporate generative AI into ongoing co-parenting practices. We investigate how AI becomes situated within existing relational and coordination structures, reshaping communication, negotiation, and emotional engagement while raising new questions about privacy, authority, responsibility, and the boundaries of AI involvement.',
         tags: ['selected', 'ai-agency', 'relations-protocols', 'future-systems'],
-        sort: '2026-09-01'
+        sort: '2026-09-01',
+        selectedOrder: 1
     },
     {
         title: '"They Didn’t Tell Me Until the Last Minute": Understanding and Designing for Scheduling and Awareness in Blended Families through a Digital Calendar',
@@ -47,7 +56,8 @@ const researchProjectsData = [
         links: [],
         description: 'This work investigates how digital calendars can support scheduling and awareness in blended families through the design and field deployment of FamilyCanvas. We show how technologies become entangled with uneven family roles, segmented household routines, and relational boundaries—revealing why greater connectivity or visibility does not necessarily produce greater participation or coordination.',
         tags: ['selected', 'relations-protocols'],
-        sort: '2026-08-01'
+        sort: '2026-08-01',
+        selectedOrder: 2
     },
     {
         title: 'From Self to AI Afterlife: Exploring Identity Work Transcending Death',
@@ -60,7 +70,8 @@ const researchProjectsData = [
         ],
         description: 'This work examines how people envision identity work in AI Afterlife. We investigate how generative and evolving AI systems may enable identities to be crafted, continued, and relationally negotiated beyond death, raising broader questions about who can shape an AI-mediated identity and how it should change over time.',
         tags: ['selected', 'self-identity', 'relations-protocols', 'future-systems'],
-        sort: '2026-04-10'
+        sort: '2026-04-10',
+        selectedOrder: 4
     },
     {
         title: 'Exploring the Needs of Preschool-aged Children, Parents, and Grandparents for Communicating Over Distance',
@@ -87,7 +98,8 @@ const researchProjectsData = [
         ],
         description: 'FamilyCanvas is a digital whiteboard calendar designed with and for blended-family life. Through autobiographical design and field deployment, we explore how interactive systems can support everyday coordination and awareness while remaining sensitive to uneven participation, care work, and complex family relationships.',
         tags: ['selected', 'relations-protocols'],
-        sort: '2026-03-01'
+        sort: '2026-03-01',
+        selectedOrder: 3
     },
     {
         title: 'WatchGuardian: Enabling User-Defined Personalized Just-in-Time Intervention on Smartwatch',
@@ -102,7 +114,8 @@ const researchProjectsData = [
         ],
         description: 'WatchGuardian is a smartwatch-based just-in-time intervention system that lets users define and detect their own undesirable actions from only a small number of samples. The project explores deployable human-centered AI for personalized behavior change, user-defined interventions, and everyday human agency.',
         tags: ['selected', 'ai-agency'],
-        sort: '2026-01-01'
+        sort: '2026-01-01',
+        selectedOrder: 6
     },
     {
         title: 'FamilyCanvas: A Family Whiteboard Calendar Designed for Blended Families',
@@ -130,7 +143,8 @@ const researchProjectsData = [
         award: 'Best Paper Honorable Mention Award',
         description: 'This work examines how people perceive and envision their own AI-generated agents as posthumous digital legacies, including how these agents might later interact with loved ones and continue their presence and values. We explore how emerging AI capabilities complicate identity consistency, consent, family relationships, support, and the boundaries of a person’s influence after death.',
         tags: ['selected', 'ai-agency', 'self-identity', 'relations-protocols', 'future-systems'],
-        sort: '2025-01-16'
+        sort: '2025-01-16',
+        selectedOrder: 5
     },
     {
         title: 'Understanding the Effects of Restraining Finger Coactivation in Mid-Air Typing: from a Neuromechanical Perspective',
@@ -174,7 +188,8 @@ const researchProjectsData = [
         ],
         description: 'This qualitative study examines how late-life migrants rebuild social connections and access support through ICTs. Using social convoy theory, we show how digital technologies become embedded in changing networks of family, friendship, and care, and how social context shapes the forms of connection and support technology can sustain.',
         tags: ['selected', 'relations-protocols'],
-        sort: '2024-05-01'
+        sort: '2024-05-01',
+        selectedOrder: 7
     },
     {
         title: 'Interactive Storytelling Agents for Child Safety Education: Design, Implementation and Evaluation',
@@ -255,14 +270,31 @@ const researchTabAliases = {
 
 function getProjectsForTab(tab) {
     if (tab === 'all') {
-        return [...researchProjectsData].sort((a, b) => b.sort.localeCompare(a.sort));
+        return [...researchProjectsData]
+            .sort((a, b) => b.sort.localeCompare(a.sort));
     }
 
     const tabTags = researchTabAliases[tab] || [tab];
 
-    return researchProjectsData
-        .filter(project => project.tags.some(tag => tabTags.includes(tag)))
-        .sort((a, b) => b.sort.localeCompare(a.sort));
+    const projects = researchProjectsData
+        .filter(project => project.tags.some(tag => tabTags.includes(tag)));
+
+    // Curate the Selected tab by research trajectory rather than
+    // strict publication date so closely related work stays together.
+    if (tab === 'selected') {
+        return projects.sort((a, b) => {
+            const orderA = a.selectedOrder ?? Number.MAX_SAFE_INTEGER;
+            const orderB = b.selectedOrder ?? Number.MAX_SAFE_INTEGER;
+
+            if (orderA !== orderB) {
+                return orderA - orderB;
+            }
+
+            return b.sort.localeCompare(a.sort);
+        });
+    }
+
+    return projects.sort((a, b) => b.sort.localeCompare(a.sort));
 }
 
 function renderResearchProjects(tab) {
