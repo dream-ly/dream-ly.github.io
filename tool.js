@@ -1,5 +1,5 @@
 function createProjectHTML(project) {
-    const linksHTML = project.links
+    const linksHTML = (project.links || [])
         .map(link => `<a class="info" href="${link.url}">[${link.label}]</a>`)
         .join(' ');
 
@@ -30,6 +30,26 @@ function createProjectHTML(project) {
 
 const researchProjectsData = [
     {
+        title: 'Exploring AI-Mediated Co-Parenting: Practices, Influences, and Tensions',
+        image: 'research/AI-coparenting/cover.png',
+        authors: '<u>Ying Lei</u>, Botao "Amber" Hu, Shuai Ma, Carman Neustaedter',
+        venue: 'Under Review',
+        links: [],
+        description: 'This work examines how divorced parents incorporate generative AI into ongoing co-parenting practices. We investigate how AI becomes situated within existing relational and coordination structures, reshaping communication, negotiation, and emotional engagement while raising new questions about privacy, authority, responsibility, and the boundaries of AI involvement.',
+        tags: ['selected', 'ai-agency', 'relations-protocols', 'future-systems'],
+        sort: '2026-09-01'
+    },
+    {
+        title: '"They Didn’t Tell Me Until the Last Minute": Understanding and Designing for Scheduling and Awareness in Blended Families through a Digital Calendar',
+        image: 'research/digital-calendar/cover-1.png',
+        authors: '<u>Ying Lei</u>, Reese Muntean, Carman Neustaedter',
+        venue: 'Under Review',
+        links: [],
+        description: 'This work investigates how digital calendars can support scheduling and awareness in blended families through the design and field deployment of FamilyCanvas. We show how technologies become entangled with uneven family roles, segmented household routines, and relational boundaries—revealing why greater connectivity or visibility does not necessarily produce greater participation or coordination.',
+        tags: ['selected', 'relations-protocols'],
+        sort: '2026-08-01'
+    },
+    {
         title: 'From Self to AI Afterlife: Exploring Identity Work Transcending Death',
         image: 'research/AI-Afterlife-Identity-Work/cover.png',
         authors: '<u>Ying Lei</u>, Carman Neustaedter, Xiaojuan Ma, Shuai Ma',
@@ -38,9 +58,36 @@ const researchProjectsData = [
             { label: 'DOI', url: 'https://doi.org/10.2139/ssrn.6554164' },
             { label: 'SSRN', url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6554164' }
         ],
-        description: 'This work examines how people envision identity work in AI Afterlife. Through a qualitative study, we analyze how identity may be crafted, continued, and relationally negotiated through generative, interactive, and evolving posthumous AI systems.',
-        tags: ['selected', 'self-identity', 'future-systems'],
+        description: 'This work examines how people envision identity work in AI Afterlife. We investigate how generative and evolving AI systems may enable identities to be crafted, continued, and relationally negotiated beyond death, raising broader questions about who can shape an AI-mediated identity and how it should change over time.',
+        tags: ['selected', 'self-identity', 'relations-protocols', 'future-systems'],
         sort: '2026-04-10'
+    },
+    {
+        title: 'Exploring the Needs of Preschool-aged Children, Parents, and Grandparents for Communicating Over Distance',
+        image: 'research/G2G/cover.png',
+        authors: 'Denise Y. Geiskkovitch, Carman Neustaedter, <u>Ying Lei</u>, Azadeh Forghani',
+        venue: 'DIS 2026',
+        links: [
+            { label: 'Video', url: 'https://vimeo.com/693993223?share=copy&fl=sv&fe=ci' },
+            { label: 'PDF', url: 'https://dl.acm.org/doi/pdf/10.1145/3800645.3813078' }
+        ],
+        description: 'This study explores how preschool-aged children, parents, and grandparents imagine communication over distance. Through video prototypes, we examine interaction forms, parental mediation, and intergenerational care practices that could support remote family relationships.',
+        tags: ['relations-protocols'],
+        sort: '2026-04-01'
+    },
+    {
+        title: 'FamilyCanvas: Designing a Digital Calendar for Blended Families Through Autobiographical Design and Field Deployment',
+        image: 'research/digital-calendar/cover-1.png',
+        authors: '<u>Ying Lei</u>, Reese Muntean, Carman Neustaedter',
+        venue: 'CHI Extended Abstract 2026',
+        links: [
+            { label: 'Website', url: 'https://clab.iat.sfu.ca/FamilyCanvas/' },
+            { label: 'Video', url: 'https://vimeo.com/1179352745?share=copy&fl=sv&fe=ci' },
+            { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/familycanvas.html' }
+        ],
+        description: 'FamilyCanvas is a digital whiteboard calendar designed with and for blended-family life. Through autobiographical design and field deployment, we explore how interactive systems can support everyday coordination and awareness while remaining sensitive to uneven participation, care work, and complex family relationships.',
+        tags: ['selected', 'relations-protocols'],
+        sort: '2026-03-01'
     },
     {
         title: 'WatchGuardian: Enabling User-Defined Personalized Just-in-Time Intervention on Smartwatch',
@@ -58,6 +105,18 @@ const researchProjectsData = [
         sort: '2026-01-01'
     },
     {
+        title: 'FamilyCanvas: A Family Whiteboard Calendar Designed for Blended Families',
+        image: 'research/digital-calendar/cover.png',
+        authors: '<u>Ying Lei</u>, Carman Neustaedter',
+        venue: 'GI 2025 Poster',
+        links: [
+            { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
+        ],
+        description: 'This poster presents the initial design of FamilyCanvas, a whiteboard-calendar system for blended families with joint custody. The project investigates how digital family calendars can support scheduling, remote awareness, shared visibility, and everyday coordination across households.',
+        tags: ['relations-protocols'],
+        sort: '2025-05-16'
+    },
+    {
         title: '"AI Afterlife" as Digital Legacy: Perceptions, Expectations, and Concerns',
         image: 'research/AI-Afterlife/cover.jpg',
         authors: '<u>Ying Lei</u>, Shuai Ma, Yuling Sun, Xiaojuan Ma',
@@ -69,48 +128,9 @@ const researchProjectsData = [
             { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/multimodal-agent.html' }
         ],
         award: 'Best Paper Honorable Mention Award',
-        description: 'This work studies AI-generated agents as posthumous digital legacies. Through a qualitative study, we examine how people imagine AI afterlife systems, and how such agents may reshape posthumous identity, remembrance, consent, family relationships, and the ethics of continuing presence after death.',
-        tags: ['selected', 'self-identity', 'relations-protocols', 'future-systems'],
+        description: 'This work examines how people perceive and envision their own AI-generated agents as posthumous digital legacies, including how these agents might later interact with loved ones and continue their presence and values. We explore how emerging AI capabilities complicate identity consistency, consent, family relationships, support, and the boundaries of a person’s influence after death.',
+        tags: ['selected', 'ai-agency', 'self-identity', 'relations-protocols', 'future-systems'],
         sort: '2025-01-16'
-    },
-    {
-        title: 'FamilyCanvas: Designing a Digital Calendar for Blended Families Through Autobiographical Design and Field Deployment',
-        image: 'research/digital-calendar/cover-1.png',
-        authors: '<u>Ying Lei</u>, Reese Muntean, Carman Neustaedter',
-        venue: 'CHI Extended Abstract 2026',
-        links: [
-            {label: 'Website', url: 'https://clab.iat.sfu.ca/FamilyCanvas/'},
-            {label: 'Video', url: 'https://vimeo.com/1179352745?share=copy&fl=sv&fe=ci'},
-            {label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/familycanvas.html' }
-        ],
-        description: 'FamilyCanvas is a digital whiteboard calendar for blended families. Through a nine-month autobiographical design process and a five-week field deployment with two additional families, we examine how shared visibility, care work, coordination, and lightweight communication shape everyday domestic cooperation and family protocols.',
-        tags: ['selected', 'relations-protocols'],
-        sort: '2026-03-01'
-    },
-    {
-        title: 'Exploring the Needs of Preschool-aged Children, Parents, and Grandparents for Communicating Over Distance',
-        image: 'research/G2G/cover.png',
-        authors: 'Denise Y. Geiskkovitch, Carman Neustaedter, <u>Ying Lei</u>, Azadeh Forghani',
-        venue: 'DIS 2026',
-        links: [
-            { label: 'Video', url: 'https://vimeo.com/693993223?share=copy&fl=sv&fe=ci'},
-            { label: 'PDF', url: 'https://dl.acm.org/doi/pdf/10.1145/3800645.3813078' }
-        ],
-        description: 'This study explores how preschool-aged children, parents, and grandparents imagine communication over distance. Through video prototypes, we examine interaction forms, parental mediation, and intergenerational care practices that could support remote family relationships.',
-        tags: ['relations-protocols'],
-        sort: '2026-04-01'
-    },
-    {
-        title: 'FamilyCanvas: A Family Whiteboard Calendar Designed for Blended Families',
-        image: 'research/digital-calendar/cover.png',
-        authors: '<u>Ying Lei</u>, Carman Neustaedter',
-        venue: 'GI 2025 Poster',
-        links: [
-            { label: 'PDF', url: 'research/digital-calendar/GI25Poster.pdf' }
-        ],
-        description: 'This poster presents the initial design of FamilyCanvas, a whiteboard-calendar system for blended families with joint custody. The project investigates how digital family calendars can support scheduling, remote awareness, shared visibility, and everyday coordination across households.',
-        tags: ['relations-protocols'],
-        sort: '2025-05-16'
     },
     {
         title: 'Understanding the Effects of Restraining Finger Coactivation in Mid-Air Typing: from a Neuromechanical Perspective',
@@ -128,20 +148,6 @@ const researchProjectsData = [
         sort: '2024-08-01'
     },
     {
-        title: 'Unpacking ICT-supported Social Connections and Support of Late-life Migration: From the Lens of Social Convoys',
-        image: 'research/late-life migrants/cover.jpg',
-        authors: '<u>Ying Lei</u>, Shuai Ma, Yuling Sun.',
-        venue: 'CHI 2024',
-        links: [
-            { label: 'DOI', url: 'https://doi.org/10.1145/3613904.3642898' },
-            { label: 'PDF', url: 'research/late-life migrants/chi24-1000.pdf' },
-            { label: 'Video', url: 'https://www.youtube.com/watch?v=c02uMf9_7S0' }
-        ],
-        description: 'This qualitative study examines how late-life migrants rebuild social connections and access support through ICTs. Using the lens of social convoys, we unpack how aging, migration, family ties, and digital communication shape identity, care, and ICT-mediated social support.',
-        tags: ['selected', 'relations-protocols'],
-        sort: '2024-05-01'
-    },
-    {
         title: '"Are You Really Sure?" Understanding the Effects of Human Self-Confidence Calibration in AI-Assisted Decision Making',
         image: 'research/decision making-confidence/cover.jpg',
         authors: 'Shuai Ma, Xinru Wang, <u>Ying Lei</u>, Chuhan Shi, Ming Yin, Xiaojuan Ma.',
@@ -152,9 +158,35 @@ const researchProjectsData = [
             { label: 'Video', url: 'https://www.youtube.com/watch?v=gCRIX8CCUKs' },
             { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/decision-intelligence.html' }
         ],
-        description: 'This work examines appropriate reliance in AI-assisted decision-making from a human-centered perspective. We study how calibrating human self-confidence can help people decide when to trust AI, when to trust themselves, and how to maintain agency under uncertainty.',
+        description: 'This work examines appropriate reliance in AI-assisted decision-making by focusing on a capability people bring to the interaction: knowing when their own judgment is likely to be right or wrong. We study how calibrating human self-confidence can help people navigate disagreement with AI and make more informed decisions about when to rely on AI versus themselves.',
         tags: ['ai-agency'],
         sort: '2024-05-02'
+    },
+    {
+        title: 'Unpacking ICT-supported Social Connections and Support of Late-life Migration: From the Lens of Social Convoys',
+        image: 'research/late-life migrants/cover.jpg',
+        authors: '<u>Ying Lei</u>, Shuai Ma, Yuling Sun.',
+        venue: 'CHI 2024',
+        links: [
+            { label: 'DOI', url: 'https://doi.org/10.1145/3613904.3642898' },
+            { label: 'PDF', url: 'research/late-life migrants/chi24-1000.pdf' },
+            { label: 'Video', url: 'https://www.youtube.com/watch?v=c02uMf9_7S0' }
+        ],
+        description: 'This qualitative study examines how late-life migrants rebuild social connections and access support through ICTs. Using social convoy theory, we show how digital technologies become embedded in changing networks of family, friendship, and care, and how social context shapes the forms of connection and support technology can sustain.',
+        tags: ['selected', 'relations-protocols'],
+        sort: '2024-05-01'
+    },
+    {
+        title: 'Interactive Storytelling Agents for Child Safety Education: Design, Implementation and Evaluation',
+        image: 'project/bachelor/cover.png',
+        authors: '<u>Ying Lei</u>',
+        venue: 'Bachelor\'s Thesis',
+        links: [
+            { label: 'PDF', url: 'project/bachelor/report.pdf' }
+        ],
+        description: 'This thesis explores how interactive storytelling agents can support child safety education. I conducted formative research, built a safety knowledge corpus and question-answering dataset, designed GPT-3-based story interactions, and evaluated the system through user studies.',
+        tags: ['ai-agency'],
+        sort: '2023-06-01'
     },
     {
         title: 'Who Should I Trust: AI or Myself? Leveraging Human and AI Correctness Likelihood to Promote Appropriate Trust in AI-Assisted Decision-Making',
@@ -167,7 +199,7 @@ const researchProjectsData = [
             { label: 'Video', url: 'https://www.youtube.com/watch?v=AWdUDaEqoSs' },
             { label: 'Portfolio', url: 'https://ying-lei-career-122632491743.northamerica-northeast2.run.app/projects/decision-intelligence.html' }
         ],
-        description: 'This paper investigates how people make trust judgments in AI-assisted decision-making. We propose supporting appropriate reliance by comparing human and AI correctness likelihood at the instance level, helping users decide when to rely on AI and when to trust their own judgment.',
+        description: 'This work investigates appropriate reliance in AI-assisted decision-making by considering the relative capabilities of humans and AI at the instance level. We explore how estimates of both human and AI correctness likelihood can help people recognize when AI is likely to complement their own judgment and decide whose answer to rely on.',
         tags: ['ai-agency'],
         sort: '2023-05-01'
     },
@@ -196,19 +228,8 @@ const researchProjectsData = [
         description: 'This work develops a cognitive model that combines deep learning and interpretable emotional psychology frameworks to support computational affection and personality modeling.',
         tags: ['ai-agency'],
         sort: '2022-08-26'
-    },
-    {
-        title: 'Interactive Storytelling Agents for Child Safety Education: Design, Implementation and Evaluation',
-        image: 'project/bachelor/cover.png',
-        authors: '<u>Ying Lei</u>',
-        venue: 'Bachelor\'s Thesis',
-        links: [
-            {'label': 'PDF', url: 'project/bachelor/report.pdf'},
-        ],
-        description: 'This thesis explores how interactive storytelling agents can support child safety education. I conducted formative research, built a safety knowledge corpus and question-answering dataset, designed GPT-3-based story interactions, and evaluated the system through user studies.',
-        tags: ['ai-agency'],
-        sort: '2023-06-01'
-    },
+    }
+
     // {
     //     title: 'Mind Catcher-Affective Computing based Edge-side Music Therapy System',
     //     image: 'project/music/cover.jpg',
