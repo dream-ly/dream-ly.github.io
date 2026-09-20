@@ -44,7 +44,7 @@ const researchProjectsData = [
         venue: 'Under Review',
         links: [],
         description: 'This work examines how divorced parents incorporate generative AI into ongoing co-parenting practices. We investigate how AI becomes situated within existing relational and coordination structures, reshaping communication, negotiation, and emotional engagement while raising new questions about privacy, authority, responsibility, and the boundaries of AI involvement.',
-        tags: ['selected', 'ai-agency', 'relations-protocols', 'future-systems'],
+        tags: ['selected', 'relations-protocols', 'future-systems'],
         sort: '2026-09-01',
         selectedOrder: 1
     },
